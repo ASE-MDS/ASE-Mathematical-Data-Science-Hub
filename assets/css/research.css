@@ -112,14 +112,11 @@
 
 .research-section {
 
-    padding: 90px 7%;
+    padding: 85px 6% 65px;
 
-    background: #ffffff;
-
-    scroll-margin-top: 150px;
+    scroll-margin-top: 90px;
 
 }
-
 
 .research-section.alt-section {
 
