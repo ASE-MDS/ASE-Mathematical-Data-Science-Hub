@@ -111,11 +111,8 @@
 ====================================================== */
 
 .research-section {
-
-    padding: 85px 6% 65px;
-
-    scroll-margin-top: 90px;
-
+    padding: 110px 6% 65px;
+    scroll-margin-top: 175px;
 }
 
 .research-section.alt-section {
