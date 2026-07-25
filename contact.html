@@ -1,97 +1,347 @@
+<!-- ================= CONTACT PAGE ================= -->
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <title>Contact - MDSC-ASE</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | MDS</title>
+
+
+    <!-- Google Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Main CSS -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/navbar.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/contact.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/footer.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/responsive.css">
+
 </head>
+
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="members.html">Members</a>
-    <a href="projects.html">Projects</a>
-    <a href="research.html">Research</a>
-    <a href="resources.html">Resources</a>
-    <a href="events.html">Events</a>
-    <a href="news.html">News</a>
-    <a href="fundraising.html">Fundraising</a>
-    <a href="partners.html">Partners</a>
-    <a href="contact.html">Contact</a>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <!-- MDS = Home -->
+
+    <a
+        href="index.html"
+        class="logo">
+
+        MDS
+
+    </a>
+
+
+    <!-- Mobile menu checkbox -->
+
+    <input
+        type="checkbox"
+        id="menu-toggle"
+        class="menu-checkbox">
+
+
+    <!-- Hamburger button -->
+
+    <label
+        for="menu-toggle"
+        class="menu-toggle">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </label>
+
+
+    <!-- Main navigation -->
+
+    <div class="nav-links">
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="research.html">
+            Research
+        </a>
+
+        <a
+            href="contact.html"
+            class="active">
+
+            Contact
+
+        </a>
+
+    </div>
+
 </nav>
 
-<header class="hero-small">
-    <h1>Contact Us</h1>
-    <p>
-        We'd love to hear from students, researchers, institutions,
-        companies and future collaborators.
-    </p>
-</header>
 
-<section>
+<main>
 
-<h2>Club Information</h2>
 
-<p><strong>Club:</strong> ASE Mathematical Data Science Club (MDSC-ASE)</p>
+<!-- ================= FUNDRAISING ================= -->
 
-<p><strong>Institution:</strong> African School of Economics (ASE)</p>
+<section
+    id="fundraising"
+    class="contact-section">
 
-<p><strong>Email:</strong> contactasemdsc@gmail.com</p>
+    <div class="section-header">
 
-<p><strong>Phone:</strong> +229 XX XX XX XX</p>
+        <span>01</span>
 
-<p><strong>Location:</strong> Abomey-Calavi, Benin</p>
+        <h2>
+            Fundraising
+        </h2>
+
+        <div class="section-line"></div>
+
+    </div>
+
+
+    <div class="contact-card">
+
+        <div class="contact-icon">
+
+            <i class="fa-solid fa-hand-holding-heart"></i>
+
+        </div>
+
+
+        <div class="contact-content">
+
+            <h3>
+                Support the Club
+            </h3>
+
+            <p>
+
+                Support the Mathematical Data Science Club
+                and contribute to the development of its
+                academic, research and professional activities.
+
+            </p>
+
+
+            <a
+                href="#"
+                class="contact-btn">
+
+                Support the Club
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section>
 
-<h2>Contact Form</h2>
+<!-- ================= DONATION ================= -->
 
-<form>
+<section
+    id="donation"
+    class="contact-section alt-section">
 
-<label>Full Name</label><br>
-<input type="text" placeholder="Your full name"><br><br>
+    <div class="section-header">
 
-<label>Email Address</label><br>
-<input type="email" placeholder="Your email"><br><br>
+        <span>02</span>
 
-<label>Subject</label><br>
-<input type="text" placeholder="Subject"><br><br>
+        <h2>
+            Donation
+        </h2>
 
-<label>Message</label><br>
-<textarea rows="8" placeholder="Write your message here..."></textarea><br><br>
+        <div class="section-line"></div>
 
-<button type="submit">Send Message</button>
+    </div>
 
-</form>
+
+    <div class="contact-card">
+
+        <div class="contact-icon">
+
+            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+
+        </div>
+
+
+        <div class="contact-content">
+
+            <h3>
+                Make a Donation
+            </h3>
+
+            <p>
+
+                Your contribution can help support
+                research initiatives, academic activities,
+                events and professional development
+                opportunities.
+
+            </p>
+
+
+            <a
+                href="#"
+                class="contact-btn">
+
+                Make a Donation
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section>
 
-<h2>Connect With Us</h2>
+<!-- ================= CONNECT ================= -->
 
-<p>LinkedIn</p>
+<section
+    id="connect"
+    class="contact-section">
 
-<p>GitHub</p>
+    <div class="section-header">
 
-<p>Facebook</p>
+        <span>03</span>
 
-<p>X (Twitter)</p>
+        <h2>
+            Connect
+        </h2>
 
-<p>Instagram</p>
+        <div class="section-line"></div>
+
+    </div>
+
+
+    <div class="connect-content">
+
+        <p>
+
+            Follow the Mathematical Data Science Club
+            and stay connected with our activities,
+            research and community.
+
+        </p>
+
+
+        <div class="social-links">
+
+
+            <!-- LinkedIn -->
+
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="social-card">
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+                <span>
+                    LinkedIn
+                </span>
+
+            </a>
+
+
+            <!-- Facebook -->
+
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="social-card">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+                <span>
+                    Facebook
+                </span>
+
+            </a>
+
+
+            <!-- Instagram -->
+
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="social-card">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <span>
+                    Instagram
+                </span>
+
+            </a>
+
+
+        </div>
+
+    </div>
 
 </section>
 
-<footer>
 
-<p>© 2026 ASE Mathematical Data Science Club</p>
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <!-- Keep your existing footer here -->
 
 </footer>
+
 
 </body>
 
