@@ -479,7 +479,9 @@
     </div>
 
 </section>
-<!-- ================= RESOURCES ================= -->
+<!-- ======================================================
+     RESOURCES
+====================================================== -->
 
 <section id="resources" class="about-section">
 
@@ -493,37 +495,308 @@
 
     </div>
 
-    <div class="resources-grid">
 
-        <div class="resource-card">
+    <div class="resource-tabs">
 
-            <i class="fa-solid fa-book"></i>
+        <!-- Hidden radio buttons -->
 
-            <h3>Learning Materials</h3>
+        <input
+            type="radio"
+            name="resource-tab"
+            id="learning-tab"
+            checked
+        >
+
+        <input
+            type="radio"
+            name="resource-tab"
+            id="programming-tab"
+        >
+
+        <input
+            type="radio"
+            name="resource-tab"
+            id="datasets-tab"
+        >
+
+        <input
+            type="radio"
+            name="resource-tab"
+            id="github-tab"
+        >
+
+
+        <!-- ==================================================
+             RESOURCE CARDS
+        ================================================== -->
+
+        <div class="resource-categories">
+
+
+            <!-- Learning Materials -->
+
+            <label
+                for="learning-tab"
+                class="resource-card"
+            >
+
+                <div class="resource-icon">
+
+                    <i class="fas fa-book"></i>
+
+                </div>
+
+                <h3>
+                    Learning Materials
+                </h3>
+
+            </label>
+
+
+            <!-- Programming Resources -->
+
+            <label
+                for="programming-tab"
+                class="resource-card"
+            >
+
+                <div class="resource-icon">
+
+                    <i class="fas fa-code"></i>
+
+                </div>
+
+                <h3>
+                    Programming Resources
+                </h3>
+
+            </label>
+
+
+            <!-- Datasets -->
+
+            <label
+                for="datasets-tab"
+                class="resource-card"
+            >
+
+                <div class="resource-icon">
+
+                    <i class="fas fa-database"></i>
+
+                </div>
+
+                <h3>
+                    Datasets
+                </h3>
+
+            </label>
+
+
+            <!-- GitHub -->
+
+            <label
+                for="github-tab"
+                class="resource-card"
+            >
+
+                <div class="resource-icon">
+
+                    <i class="fab fa-github"></i>
+
+                </div>
+
+                <h3>
+                    GitHub Repository
+                </h3>
+
+            </label>
+
 
         </div>
 
-        <div class="resource-card">
 
-            <i class="fa-solid fa-code"></i>
+        <!-- ==================================================
+             LEARNING MATERIALS
+        ================================================== -->
 
-            <h3>Programming Resources</h3>
+        <div class="resource-group learning-group">
+
+            <h3>
+                Learning Materials
+            </h3>
+
+            <div class="resource-list">
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Mathematics Books
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Statistics Courses
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Data Science Resources
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
 
         </div>
 
-        <div class="resource-card">
 
-            <i class="fa-solid fa-database"></i>
+        <!-- ==================================================
+             PROGRAMMING RESOURCES
+        ================================================== -->
 
-            <h3>Datasets</h3>
+        <div class="resource-group programming-group">
+
+            <h3>
+                Programming Resources
+            </h3>
+
+            <div class="resource-list">
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Python
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    R Programming
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    SQL
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
 
         </div>
 
-        <div class="resource-card">
 
-            <i class="fa-brands fa-github"></i>
+        <!-- ==================================================
+             DATASETS
+        ================================================== -->
 
-            <h3>GitHub Repository</h3>
+        <div class="resource-group datasets-group">
+
+            <h3>
+                Datasets
+            </h3>
+
+            <div class="resource-list">
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Kaggle Datasets
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    World Bank Data
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Data.gov
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             GITHUB REPOSITORIES
+        ================================================== -->
+
+        <div class="resource-group github-group">
+
+            <h3>
+                GitHub Repositories
+            </h3>
+
+            <div class="resource-list">
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    MDSC Main Repository
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Data Science Projects
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Machine Learning Projects
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Research Projects
+                    <i class="fab fa-github"></i>
+                </a>
+
+            </div>
 
         </div>
 
