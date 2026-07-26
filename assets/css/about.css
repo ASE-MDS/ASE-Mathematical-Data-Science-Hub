@@ -110,13 +110,76 @@ PAGE NAVIGATION
 GENERAL SECTION
 ======================================================*/
 
-.about-section{
+.about-section {
 
     padding:110px 8%;
 
+    background:#ffffff;
+
 }
 
-.alt-section{
+/* ======================================================
+   ALTERNATING SECTION BACKGROUNDS
+====================================================== */
+
+/* 01 — Leader */
+#leader{
+
+    background:#ffffff;
+
+}
+
+
+/* 02 — About the Club */
+#about-club{
+
+    background:#f8f9fb;
+
+}
+
+
+/* 03 — Mission */
+#mission{
+
+    background:#ffffff;
+
+}
+
+
+/* 04 — Founding Members */
+#founding-members{
+
+    background:#f8f9fb;
+
+}
+
+
+/* 05 — Resources */
+#resources{
+
+    background:#ffffff;
+
+}
+
+
+/* 06 — Events */
+#events{
+
+    background:#f8f9fb;
+
+}
+
+
+/* 07 — News */
+#news{
+
+    background:#ffffff;
+
+}
+
+
+/* 08 — Partners */
+#partners{
 
     background:#f8f9fb;
 
