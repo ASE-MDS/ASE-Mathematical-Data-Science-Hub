@@ -179,7 +179,7 @@ GENERAL SECTION
 }
 
 /* ======================================================
-PRESIDENT
+Leader
 ======================================================*/
 
 .leader-container{
@@ -312,42 +312,104 @@ INTEREST TAGS
 ABOUT CLUB
 ======================================================*/
 
-.about-grid{
+/* ======================================================
+   ABOUT THE CLUB
+====================================================== */
 
-    max-width:1200px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:1.1fr .9fr;
-
-    gap:60px;
-
-    align-items:center;
-
+.about-section {
+    padding: 70px 8% 80px;
+    background: #f8fafc;
 }
 
-.about-text p{
+/* Section title */
 
-    margin-bottom:20px;
-
-    color:#555;
-
-    text-align:justify;
-
+.about-section .section-header {
+    text-align: center;
+    margin-bottom: 80px;
 }
 
-.about-image img{
-
-    width:100%;
-
-    border-radius:18px;
-
-    box-shadow:0 20px 45px rgba(0,0,0,.10);
-
+.about-section .section-number {
+    display: block;
+    color: #D62828;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 35px;
 }
 
+.about-section .section-header h2 {
+    margin: 0;
+    color: #003B7A;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.about-section .section-line {
+    width: 85px;
+    height: 5px;
+    background: #D62828;
+    border-radius: 5px;
+    margin: 45px auto 0;
+}
+
+/* Text content */
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    width: 100%;
+}
+
+.about-text p {
+    margin: 0 0 28px;
+    color: #34495e;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 50px 30px 60px;
+    }
+
+    .about-section .section-header {
+        margin-bottom: 55px;
+    }
+
+    .about-section .section-number {
+        margin-bottom: 25px;
+    }
+
+    .about-section .section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-section .section-line {
+        width: 70px;
+        height: 4px;
+        margin-top: 30px;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+}
 /* ======================================================
 MISSION
 ======================================================*/
@@ -709,6 +771,9 @@ MISSION
 
     }
 
+}
+#founding-members {
+    background: #f8fafc;
 }
 /* ======================================================
    RESOURCES
