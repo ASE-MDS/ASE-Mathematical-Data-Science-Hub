@@ -1,12 +1,18 @@
 /* ======================================================
    ABOUT PAGE
-======================================================*/
+====================================================== */
+
+
+/* ======================================================
+   ABOUT HERO
+====================================================== */
 
 .about-hero{
 
     height:55vh;
 
-    background:url("../images/about/about-hero.jpg") center center/cover no-repeat;
+    background:url("../images/about/about-hero.jpg")
+               center center/cover no-repeat;
 
     position:relative;
 
@@ -22,6 +28,7 @@
 
 }
 
+
 .about-overlay{
 
     position:absolute;
@@ -31,6 +38,7 @@
     background:rgba(0,0,0,.55);
 
 }
+
 
 .about-hero-content{
 
@@ -44,6 +52,7 @@
 
 }
 
+
 .about-hero h1{
 
     font-size:3.8rem;
@@ -53,6 +62,7 @@
     font-family:"Poppins",sans-serif;
 
 }
+
 
 .about-hero p{
 
@@ -64,9 +74,10 @@
 
 }
 
+
 /* ======================================================
-PAGE NAVIGATION
-======================================================*/
+   PAGE NAVIGATION
+====================================================== */
 
 .page-navigation{
 
@@ -90,15 +101,19 @@ PAGE NAVIGATION
 
 }
 
+
 .page-navigation a{
 
     color:#12366f;
 
     font-weight:600;
 
+    text-decoration:none;
+
     transition:.3s;
 
 }
+
 
 .page-navigation a:hover{
 
@@ -106,23 +121,25 @@ PAGE NAVIGATION
 
 }
 
-/* ======================================================
-GENERAL SECTION
-======================================================*/
 
-.about-section {
+/* ======================================================
+   GENERAL SECTION
+====================================================== */
+
+.about-section{
 
     padding:110px 8%;
 
-    background:#ffffff;
-
 }
+
 
 /* ======================================================
    ALTERNATING SECTION BACKGROUNDS
 ====================================================== */
 
+
 /* 01 — Leader */
+
 #leader{
 
     background:#ffffff;
@@ -131,6 +148,7 @@ GENERAL SECTION
 
 
 /* 02 — About the Club */
+
 #about-club{
 
     background:#f8f9fb;
@@ -139,6 +157,7 @@ GENERAL SECTION
 
 
 /* 03 — Mission */
+
 #mission{
 
     background:#ffffff;
@@ -147,6 +166,7 @@ GENERAL SECTION
 
 
 /* 04 — Founding Members */
+
 #founding-members{
 
     background:#f8f9fb;
@@ -155,6 +175,7 @@ GENERAL SECTION
 
 
 /* 05 — Resources */
+
 #resources{
 
     background:#ffffff;
@@ -163,6 +184,7 @@ GENERAL SECTION
 
 
 /* 06 — Events */
+
 #events{
 
     background:#f8f9fb;
@@ -171,6 +193,7 @@ GENERAL SECTION
 
 
 /* 07 — News */
+
 #news{
 
     background:#ffffff;
@@ -179,11 +202,17 @@ GENERAL SECTION
 
 
 /* 08 — Partners */
+
 #partners{
 
     background:#f8f9fb;
 
 }
+
+
+/* ======================================================
+   SECTION HEADER
+====================================================== */
 
 .section-header{
 
@@ -192,6 +221,7 @@ GENERAL SECTION
     margin-bottom:70px;
 
 }
+
 
 .section-header span{
 
@@ -209,13 +239,17 @@ GENERAL SECTION
 
 }
 
+
 .section-header h2{
+
+    margin:0;
 
     font-size:2.9rem;
 
     color:#003B7A;
 
 }
+
 
 .section-line{
 
@@ -231,6 +265,7 @@ GENERAL SECTION
 
 }
 
+
 .section-header p{
 
     max-width:700px;
@@ -241,9 +276,10 @@ GENERAL SECTION
 
 }
 
+
 /* ======================================================
-Leader
-======================================================*/
+   LEADER
+====================================================== */
 
 .leader-container{
 
@@ -261,6 +297,7 @@ Leader
 
 }
 
+
 .leader-photo img{
 
     width:100%;
@@ -271,6 +308,7 @@ Leader
 
 }
 
+
 .leader-content h3{
 
     font-size:2.2rem;
@@ -279,6 +317,7 @@ Leader
 
 }
 
+
 .leader-content h4{
 
     color:#C62828;
@@ -286,6 +325,7 @@ Leader
     margin:8px 0 30px;
 
 }
+
 
 .leader-content p{
 
@@ -297,6 +337,7 @@ Leader
 
 }
 
+
 .leader-content h5{
 
     margin-top:25px;
@@ -307,9 +348,10 @@ Leader
 
 }
 
+
 /* ======================================================
-INTEREST TAGS
-======================================================*/
+   INTEREST TAGS
+====================================================== */
 
 .interest-tags{
 
@@ -322,6 +364,7 @@ INTEREST TAGS
     margin-bottom:30px;
 
 }
+
 
 .interest-tags span{
 
@@ -339,6 +382,7 @@ INTEREST TAGS
 
 }
 
+
 .leader-contact{
 
     display:flex;
@@ -349,6 +393,7 @@ INTEREST TAGS
 
 }
 
+
 .leader-contact i{
 
     color:#C62828;
@@ -357,13 +402,17 @@ INTEREST TAGS
 
 }
 
+
 .leader-contact a{
 
     color:#003B7A;
 
     font-weight:600;
 
+    text-decoration:none;
+
 }
+
 
 .leader-contact a:hover{
 
@@ -371,111 +420,52 @@ INTEREST TAGS
 
 }
 
-/* ======================================================
-ABOUT CLUB
-======================================================*/
 
 /* ======================================================
    ABOUT THE CLUB
 ====================================================== */
 
-.about-section {
-    padding: 70px 8% 80px;
-    background: #f8fafc;
+.about-content{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
 }
 
-/* Section title */
 
-.about-section .section-header {
-    text-align: center;
-    margin-bottom: 80px;
+.about-text{
+
+    width:100%;
+
 }
 
-.about-section .section-number {
-    display: block;
-    color: #D62828;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 35px;
+
+.about-text p{
+
+    margin:0 0 28px;
+
+    color:#34495e;
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    text-align:justify;
+
 }
 
-.about-section .section-header h2 {
-    margin: 0;
-    color: #003B7A;
-    font-size: 3.5rem;
-    font-weight: 700;
-}
 
-.about-section .section-line {
-    width: 85px;
-    height: 5px;
-    background: #D62828;
-    border-radius: 5px;
-    margin: 45px auto 0;
-}
+.about-text p:last-child{
 
-/* Text content */
+    margin-bottom:0;
 
-.about-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.about-text {
-    width: 100%;
-}
-
-.about-text p {
-    margin: 0 0 28px;
-    color: #34495e;
-    font-size: 1.15rem;
-    line-height: 1.8;
-    text-align: justify;
-}
-
-.about-text p:last-child {
-    margin-bottom: 0;
 }
 
 
 /* ======================================================
-   MOBILE
+   MISSION
 ====================================================== */
-
-@media (max-width: 768px) {
-
-    .about-section {
-        padding: 50px 30px 60px;
-    }
-
-    .about-section .section-header {
-        margin-bottom: 55px;
-    }
-
-    .about-section .section-number {
-        margin-bottom: 25px;
-    }
-
-    .about-section .section-header h2 {
-        font-size: 2.2rem;
-    }
-
-    .about-section .section-line {
-        width: 70px;
-        height: 4px;
-        margin-top: 30px;
-    }
-
-    .about-text p {
-        font-size: 1rem;
-        line-height: 1.7;
-        text-align: left;
-    }
-
-}
-/* ======================================================
-MISSION
-======================================================*/
 
 .mission-grid{
 
@@ -490,6 +480,7 @@ MISSION
     gap:35px;
 
 }
+
 
 .mission-card{
 
@@ -507,11 +498,13 @@ MISSION
 
 }
 
+
 .mission-card:hover{
 
     transform:translateY(-8px);
 
 }
+
 
 .mission-card i{
 
@@ -523,6 +516,7 @@ MISSION
 
 }
 
+
 .mission-card h3{
 
     color:#003B7A;
@@ -531,6 +525,7 @@ MISSION
 
 }
 
+
 .mission-card p{
 
     color:#555;
@@ -538,14 +533,11 @@ MISSION
     text-align:justify;
 
 }
+
+
 /* ======================================================
    FOUNDING MEMBERS
 ====================================================== */
-
-
-/* =========================
-   MEMBERS GRID
-========================= */
 
 .members-grid{
 
@@ -555,16 +547,16 @@ MISSION
 
     display:grid;
 
-    grid-template-columns:repeat(6, 1fr);
+    grid-template-columns:repeat(6,1fr);
 
     gap:35px;
 
 }
 
 
-/* =========================
+/* ======================================================
    MEMBER CARD
-========================= */
+====================================================== */
 
 .member-card{
 
@@ -583,8 +575,6 @@ MISSION
 }
 
 
-/* Hover */
-
 .member-card:hover{
 
     transform:translateY(-8px);
@@ -594,9 +584,9 @@ MISSION
 }
 
 
-/* =========================
-   FIRST ROW
-========================= */
+/* ======================================================
+   FIRST ROW — 3 CARDS
+====================================================== */
 
 .member-card:nth-child(1){
 
@@ -619,9 +609,9 @@ MISSION
 }
 
 
-/* =========================
-   SECOND ROW — CENTERED
-========================= */
+/* ======================================================
+   SECOND ROW — 2 CENTERED CARDS
+====================================================== */
 
 .member-card:nth-child(4){
 
@@ -637,9 +627,9 @@ MISSION
 }
 
 
-/* =========================
+/* ======================================================
    MEMBER PHOTO
-========================= */
+====================================================== */
 
 .member-card img{
 
@@ -658,9 +648,9 @@ MISSION
 }
 
 
-/* =========================
+/* ======================================================
    MEMBER CONTENT
-========================= */
+====================================================== */
 
 .member-content{
 
@@ -669,9 +659,9 @@ MISSION
 }
 
 
-/* =========================
+/* ======================================================
    MEMBER NAME
-========================= */
+====================================================== */
 
 .member-card h4{
 
@@ -679,7 +669,7 @@ MISSION
 
     color:#003B7A;
 
-    font-family:"Poppins", sans-serif;
+    font-family:"Poppins",sans-serif;
 
     font-size:1.25rem;
 
@@ -688,9 +678,9 @@ MISSION
 }
 
 
-/* =========================
+/* ======================================================
    MEMBER DESCRIPTION
-========================= */
+====================================================== */
 
 .member-card p{
 
@@ -707,9 +697,9 @@ MISSION
 }
 
 
-/* =========================
+/* ======================================================
    GOOGLE SITE
-========================= */
+====================================================== */
 
 .google-site{
 
@@ -721,7 +711,7 @@ MISSION
 
     color:#C62828;
 
-    font-family:"Poppins", sans-serif;
+    font-family:"Poppins",sans-serif;
 
     font-size:.95rem;
 
@@ -751,14 +741,569 @@ MISSION
 
 
 /* ======================================================
+   RESOURCES
+====================================================== */
+
+.resources-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+
+}
+
+
+.resource-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:45px 30px;
+
+    text-align:center;
+
+    border-top:5px solid #C62828;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.07);
+
+    transition:.35s;
+
+}
+
+
+.resource-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.resource-card i{
+
+    font-size:3rem;
+
+    color:#C62828;
+
+    margin-bottom:20px;
+
+}
+
+
+.resource-card h3{
+
+    color:#003B7A;
+
+}
+
+
+/* ======================================================
+   EVENTS
+====================================================== */
+
+.timeline{
+
+    max-width:900px;
+
+    margin:auto;
+
+    position:relative;
+
+    padding-left:40px;
+
+}
+
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:12px;
+
+    top:0;
+
+    bottom:0;
+
+    width:3px;
+
+    background:#C62828;
+
+}
+
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:50px;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:16px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+.timeline-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-38px;
+
+    top:32px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#C62828;
+
+}
+
+
+.timeline-item h4{
+
+    color:#003B7A;
+
+    margin-bottom:12px;
+
+}
+
+
+/* ======================================================
+   NEWS
+====================================================== */
+
+.news-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+
+.news-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+
+.news-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.news-card h3{
+
+    color:#003B7A;
+
+    margin-bottom:18px;
+
+}
+
+
+.news-card p{
+
+    color:#666;
+
+}
+
+
+/* ======================================================
+   PARTNERS
+====================================================== */
+
+.partners-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+
+.partners-grid img{
+
+    width:100%;
+
+    max-height:100px;
+
+    object-fit:contain;
+
+    filter:grayscale(100%);
+
+    transition:.35s;
+
+}
+
+
+.partners-grid img:hover{
+
+    filter:none;
+
+    transform:scale(1.05);
+
+}
+
+
+/* ======================================================
+   PARTNERS TABS
+====================================================== */
+
+.partner-tabs{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:50px auto 0;
+
+}
+
+
+.partner-tabs > input{
+
+    display:none;
+
+}
+
+
+/* ======================================================
+   PARTNER CATEGORY BUTTONS
+====================================================== */
+
+.partner-categories{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-bottom:60px;
+
+}
+
+
+.partner-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:65px;
+
+    padding:18px 20px;
+
+    background:#ffffff;
+
+    color:#003B7A;
+
+    border:2px solid #003B7A;
+
+    border-radius:10px;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+}
+
+
+.partner-btn:hover{
+
+    background:#C62828;
+
+    border-color:#C62828;
+
+    color:#ffffff;
+
+    transform:translateY(-4px);
+
+}
+
+
+/* ======================================================
+   PARTNER GROUPS
+====================================================== */
+
+.partner-group{
+
+    display:none;
+
+    animation:partnerFade .4s ease;
+
+}
+
+
+.partner-group h3{
+
+    color:#003B7A;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:1.8rem;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+
+.partner-logo-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+
+.partner-logo{
+
+    min-height:150px;
+
+    padding:25px;
+
+    background:#ffffff;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+    transition:.3s ease;
+
+}
+
+
+.partner-logo:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.10);
+
+}
+
+
+.partner-logo img{
+
+    width:100%;
+
+    max-width:180px;
+
+    max-height:100px;
+
+    object-fit:contain;
+
+}
+
+
+/* ======================================================
+   SHOW SELECTED CATEGORY
+====================================================== */
+
+#private-tab:checked ~ .private-group{
+
+    display:block;
+
+}
+
+
+#public-tab:checked ~ .public-group{
+
+    display:block;
+
+}
+
+
+#labs-tab:checked ~ .labs-group{
+
+    display:block;
+
+}
+
+
+#ngos-tab:checked ~ .ngos-group{
+
+    display:block;
+
+}
+
+
+/* ======================================================
+   ACTIVE BUTTON
+====================================================== */
+
+#private-tab:checked ~ .partner-categories label[for="private-tab"],
+#public-tab:checked ~ .partner-categories label[for="public-tab"],
+#labs-tab:checked ~ .partner-categories label[for="labs-tab"],
+#ngos-tab:checked ~ .partner-categories label[for="ngos-tab"]{
+
+    background:#003B7A;
+
+    border-color:#003B7A;
+
+    color:#ffffff;
+
+}
+
+
+/* ======================================================
+   ANIMATIONS
+====================================================== */
+
+@keyframes partnerFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ======================================================
+   CARD ANIMATION
+====================================================== */
+
+.member-card,
+.news-card,
+.resource-card,
+.mission-card,
+.timeline-item{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+
+/* ======================================================
    TABLET
 ====================================================== */
 
 @media(max-width:992px){
 
+    .leader-container,
+    .mission-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .page-navigation{
+
+        flex-wrap:wrap;
+
+        gap:18px;
+
+    }
+
+
+    /* =========================
+       FOUNDING MEMBERS
+    ========================= */
+
     .members-grid{
 
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns:repeat(2,1fr);
 
         gap:30px;
 
@@ -775,6 +1320,26 @@ MISSION
 
     }
 
+
+    /* =========================
+       PARTNERS
+    ========================= */
+
+    .partner-categories{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:20px;
+
+    }
+
+
+    .partner-logo-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
 }
 
 
@@ -783,6 +1348,230 @@ MISSION
 ====================================================== */
 
 @media(max-width:768px){
+
+    /* =========================
+       ABOUT HERO
+    ========================= */
+
+    .about-hero{
+
+        height:45vh;
+
+    }
+
+
+    .about-hero h1{
+
+        font-size:2.5rem;
+
+    }
+
+
+    /* =========================
+       GENERAL SECTION
+    ========================= */
+
+    .about-section{
+
+        padding:70px 6%;
+
+    }
+
+
+    /* =========================
+       SECTION HEADER
+    ========================= */
+
+    .section-header{
+
+        width:100%;
+
+        padding:0 20px;
+
+        box-sizing:border-box;
+
+        text-align:center;
+
+        margin-bottom:55px;
+
+    }
+
+
+    .section-header h2{
+
+        font-size:2.1rem;
+
+        line-height:1.2;
+
+    }
+
+
+    /* =========================
+       PAGE NAVIGATION
+    ========================= */
+
+    .page-navigation{
+
+        display:none;
+
+    }
+
+
+    /* =========================
+       LEADER
+    ========================= */
+
+    .leader-container{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:35px;
+
+        width:100%;
+
+    }
+
+
+    .leader-photo{
+
+        width:100%;
+
+        max-width:320px;
+
+        margin:0 auto;
+
+    }
+
+
+    .leader-photo img{
+
+        width:100%;
+
+        height:auto;
+
+        display:block;
+
+        object-fit:cover;
+
+    }
+
+
+    .leader-content{
+
+        width:100%;
+
+        max-width:500px;
+
+        padding:0 25px;
+
+        box-sizing:border-box;
+
+        text-align:left;
+
+    }
+
+
+    .leader-content h3{
+
+        font-size:1.7rem;
+
+        line-height:1.3;
+
+    }
+
+
+    .leader-content p{
+
+        font-size:.95rem;
+
+        line-height:1.7;
+
+        text-align:left;
+
+    }
+
+
+    /* =========================
+       INTEREST TAGS
+    ========================= */
+
+    .interest-tags{
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        gap:10px;
+
+    }
+
+
+    /* =========================
+       LEADER CONTACT
+    ========================= */
+
+    .leader-contact{
+
+        display:flex;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+        flex-wrap:wrap;
+
+    }
+
+
+    .leader-contact a{
+
+        word-break:break-word;
+
+    }
+
+
+    /* =========================
+       ABOUT THE CLUB
+    ========================= */
+
+    .about-text p{
+
+        font-size:1rem;
+
+        line-height:1.7;
+
+        text-align:left;
+
+    }
+
+
+    /* =========================
+       MISSION
+    ========================= */
+
+    .mission-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+    }
+
+
+    .mission-card{
+
+        padding:35px 25px;
+
+    }
+
+
+    /* =========================
+       FOUNDING MEMBERS
+    ========================= */
 
     .members-grid{
 
@@ -823,7 +1612,7 @@ MISSION
 
         height:130px;
 
-        margin-top:30px;
+        margin:30px auto 25px;
 
     }
 
@@ -834,287 +1623,23 @@ MISSION
 
     }
 
-}
 
-/* ======================================================
-   RESOURCES
-======================================================*/
+    /* =========================
+       RESOURCES
+    ========================= */
 
-.resources-grid{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-
-    gap:30px;
-
-}
-
-.resource-card{
-
-    background:#fff;
-
-    border-radius:18px;
-
-    padding:45px 30px;
-
-    text-align:center;
-
-    border-top:5px solid #C62828;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.07);
-
-    transition:.35s;
-
-}
-
-.resource-card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.resource-card i{
-
-    font-size:3rem;
-
-    color:#C62828;
-
-    margin-bottom:20px;
-
-}
-
-.resource-card h3{
-
-    color:#003B7A;
-
-}
-
-/* ======================================================
-   EVENTS
-======================================================*/
-
-.timeline{
-
-    max-width:900px;
-
-    margin:auto;
-
-    position:relative;
-
-    padding-left:40px;
-
-}
-
-.timeline::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:12px;
-
-    top:0;
-
-    bottom:0;
-
-    width:3px;
-
-    background:#C62828;
-
-}
-
-.timeline-item{
-
-    position:relative;
-
-    margin-bottom:50px;
-
-    background:#fff;
-
-    padding:30px;
-
-    border-radius:16px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-}
-
-.timeline-item::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:-38px;
-
-    top:32px;
-
-    width:18px;
-
-    height:18px;
-
-    border-radius:50%;
-
-    background:#C62828;
-
-}
-
-.timeline-item h4{
-
-    color:#003B7A;
-
-    margin-bottom:12px;
-
-}
-
-/* ======================================================
-   NEWS
-======================================================*/
-
-.news-grid{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-    gap:30px;
-
-}
-
-.news-card{
-
-    background:#fff;
-
-    border-radius:18px;
-
-    padding:35px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    transition:.35s;
-
-}
-
-.news-card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.news-card h3{
-
-    color:#003B7A;
-
-    margin-bottom:18px;
-
-}
-
-.news-card p{
-
-    color:#666;
-
-}
-
-/* ======================================================
-   PARTNERS
-======================================================*/
-
-.partners-grid{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-
-    gap:40px;
-
-    align-items:center;
-
-}
-
-.partners-grid img{
-
-    width:100%;
-
-    max-height:100px;
-
-    object-fit:contain;
-
-    filter:grayscale(100%);
-
-    transition:.35s;
-
-}
-
-.partners-grid img:hover{
-
-    filter:none;
-
-    transform:scale(1.05);
-
-}
-
-/* ======================================================
-   RESPONSIVE
-======================================================*/
-
-@media(max-width:992px){
-
-    .president-container,
-    .about-grid,
-    .mission-grid{
+    .resources-grid{
 
         grid-template-columns:1fr;
 
-    }
-
-    .page-navigation{
-
-        flex-wrap:wrap;
-
-        gap:18px;
+        gap:25px;
 
     }
 
-}
 
-@media(max-width:768px){
-
-    .about-hero{
-
-        height:45vh;
-
-    }
-
-    .about-hero h1{
-
-        font-size:2.5rem;
-
-    }
-
-    .about-section{
-
-        padding:70px 6%;
-
-    }
-
-    .section-header h2{
-
-        font-size:2.1rem;
-
-    }
+    /* =========================
+       EVENTS
+    ========================= */
 
     .timeline{
 
@@ -1122,11 +1647,13 @@ MISSION
 
     }
 
+
     .timeline::before{
 
         left:6px;
 
     }
+
 
     .timeline-item::before{
 
@@ -1134,508 +1661,32 @@ MISSION
 
     }
 
-    .page-navigation{
 
-        display:none;
-
-    }
-
-}
-
-/* ======================================================
-   SMOOTH ANIMATION
-======================================================*/
-
-.member-card,
-.news-card,
-.resource-card,
-.mission-card,
-.timeline-item{
-
-    animation:fadeUp .8s ease both;
-
-}
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(30px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-/* ======================================================
-   PARTNERS TABS
-====================================================== */
-
-.partner-tabs {
-
-    width: 100%;
-
-    max-width: 1200px;
-
-    margin: 50px auto 0;
-
-}
-
-
-/* ======================================================
-   HIDE RADIO BUTTONS
-====================================================== */
-
-.partner-tabs > input {
-
-    display: none;
-
-}
-
-
-/* ======================================================
-   PARTNER CATEGORY BUTTONS
-====================================================== */
-
-.partner-categories {
-
-    width: 100%;
-
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 25px;
-
-    margin-bottom: 60px;
-
-}
-
-
-.partner-btn {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    min-height: 65px;
-
-    padding: 18px 20px;
-
-    background: #ffffff;
-
-    color: #003B7A;
-
-    border: 2px solid #003B7A;
-
-    border-radius: 10px;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 1rem;
-
-    font-weight: 600;
-
-    text-align: center;
-
-    cursor: pointer;
-
-    transition: all .3s ease;
-
-}
-
-
-.partner-btn:hover {
-
-    background: #C62828;
-
-    border-color: #C62828;
-
-    color: #ffffff;
-
-    transform: translateY(-4px);
-
-}
-
-
-/* ======================================================
-   PARTNER GROUPS
-====================================================== */
-
-.partner-group {
-
-    display: none;
-
-    animation: partnerFade .4s ease;
-
-}
-
-
-.partner-group h3 {
-
-    color: #003B7A;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 1.8rem;
-
-    text-align: center;
-
-    margin-bottom: 35px;
-
-}
-
-
-.partner-logo-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 30px;
-
-}
-
-
-.partner-logo {
-
-    min-height: 150px;
-
-    padding: 25px;
-
-    background: #ffffff;
-
-    border: 1px solid #E5E7EB;
-
-    border-radius: 15px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    box-shadow: 0 8px 25px rgba(0,0,0,.06);
-
-    transition: .3s ease;
-
-}
-
-
-.partner-logo:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow: 0 15px 30px rgba(0,0,0,.10);
-
-}
-
-
-.partner-logo img {
-
-    width: 100%;
-
-    max-width: 180px;
-
-    max-height: 100px;
-
-    object-fit: contain;
-
-}
-
-
-/* ======================================================
-   SHOW SELECTED CATEGORY
-====================================================== */
-
-/* Private Institutions */
-
-#private-tab:checked ~ .private-group {
-
-    display: block;
-
-}
-
-
-/* Public Institutions */
-
-#public-tab:checked ~ .public-group {
-
-    display: block;
-
-}
-
-
-/* Labs */
-
-#labs-tab:checked ~ .labs-group {
-
-    display: block;
-
-}
-
-
-/* NGOs */
-
-#ngos-tab:checked ~ .ngos-group {
-
-    display: block;
-
-}
-
-
-/* ======================================================
-   ACTIVE BUTTON
-====================================================== */
-
-#private-tab:checked ~ .partner-categories label[for="private-tab"],
-#public-tab:checked ~ .partner-categories label[for="public-tab"],
-#labs-tab:checked ~ .partner-categories label[for="labs-tab"],
-#ngos-tab:checked ~ .partner-categories label[for="ngos-tab"] {
-
-    background: #003B7A;
-
-    border-color: #003B7A;
-
-    color: #ffffff;
-
-}
-
-
-/* ======================================================
-   ANIMATION
-====================================================== */
-
-@keyframes partnerFade {
-
-    from {
-
-        opacity: 0;
-
-        transform: translateY(10px);
-
-    }
-
-    to {
-
-        opacity: 1;
-
-        transform: translateY(0);
-
-    }
-
-}
-
-
-/* ======================================================
-   TABLET
-====================================================== */
-
-@media (max-width: 992px) {
-
-    .partner-categories {
-
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 20px;
-
-    }
-
-    .partner-logo-grid {
-
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-
-}
-
-
-/* ======================================================
-   MOBILE
-====================================================== */
-
-@media (max-width: 768px) {
-
-
-    /* ==================================================
+    /* =========================
        PARTNERS
-    ================================================== */
-
-    .partner-categories {
-
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-
-    }
-
-    .partner-btn {
-
-        min-height: 60px;
-
-        font-size: .95rem;
-
-    }
-
-    .partner-logo-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-    /* ==================================================
-       SECTION HEADER
-    ================================================== */
-
-    .section-header {
-
-        width: 100%;
-
-        padding: 0 20px;
-
-        box-sizing: border-box;
-
-        text-align: center;
-
-    }
-
-    .section-header h2 {
-
-        font-size: 2rem;
-
-        line-height: 1.2;
-
-    }
-
-
-    /* ==================================================
-       PRESIDENT / LEADER
-    ================================================== */
-
-    .leader-container {
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 35px;
-
-        width: 100%;
-
-    }
-
-
-    /* =========================
-       LEADER PHOTO
     ========================= */
 
-    .leader-photo {
+    .partner-categories{
 
-        width: 100%;
+        grid-template-columns:1fr;
 
-        max-width: 320px;
-
-        margin: 0 auto;
-
-    }
-
-    .leader-photo img {
-
-        width: 100%;
-
-        height: auto;
-
-        display: block;
-
-        object-fit: cover;
+        gap:15px;
 
     }
 
 
-    /* =========================
-       LEADER CONTENT
-    ========================= */
+    .partner-btn{
 
-    .leader-content {
+        min-height:60px;
 
-        width: 100%;
-
-        max-width: 500px;
-
-        padding: 0 25px;
-
-        box-sizing: border-box;
-
-        text-align: left;
-
-    }
-
-    .leader-content h3 {
-
-        font-size: 1.7rem;
-
-        line-height: 1.3;
-
-    }
-
-    .leader-content p {
-
-        font-size: .95rem;
-
-        line-height: 1.7;
-
-        text-align: left;
+        font-size:.95rem;
 
     }
 
 
-    /* =========================
-       INTEREST TAGS
-    ========================= */
+    .partner-logo-grid{
 
-    .interest-tags {
-
-        display: flex;
-
-        flex-wrap: wrap;
-
-        gap: 10px;
-
-    }
-
-
-    /* =========================
-       LEADER CONTACT
-    ========================= */
-
-    .leader-contact {
-
-        display: flex;
-
-        align-items: flex-start;
-
-        gap: 10px;
-
-        flex-wrap: wrap;
-
-    }
-
-    .leader-contact a {
-
-        word-break: break-word;
+        grid-template-columns:1fr;
 
     }
 
