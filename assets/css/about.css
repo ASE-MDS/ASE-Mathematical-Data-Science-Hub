@@ -751,67 +751,349 @@
 
 
 /* ======================================================
-   RESOURCES
+   RESOURCES TABS
 ====================================================== */
 
-.resources-grid{
+.resource-tabs {
 
-    max-width:1200px;
+    max-width: 1200px;
 
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-
-    gap:30px;
+    margin: 0 auto;
 
 }
 
 
-.resource-card{
+/* ======================================================
+   HIDE RADIO BUTTONS
+====================================================== */
 
-    background:#fff;
+.resource-tabs > input {
 
-    border-radius:18px;
-
-    padding:45px 30px;
-
-    text-align:center;
-
-    border-top:5px solid #C62828;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.07);
-
-    transition:.35s;
+    display: none;
 
 }
 
 
-.resource-card:hover{
+/* ======================================================
+   RESOURCE CARDS
+====================================================== */
 
-    transform:translateY(-8px);
+.resource-categories {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+
+    margin-bottom: 60px;
+
+}
+
+
+.resource-card {
+
+    padding: 35px 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
 
 }
 
 
-.resource-card i{
+.resource-card:hover {
 
-    font-size:3rem;
+    transform: translateY(-7px);
 
-    color:#C62828;
+    border-color: #C62828;
 
-    margin-bottom:20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* ======================================================
+   RESOURCE ICON
+====================================================== */
+
+.resource-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #003B7A;
+
+    font-size: 28px;
+
+    transition: 0.3s ease;
 
 }
 
 
-.resource-card h3{
+/* ======================================================
+   RESOURCE TITLE
+====================================================== */
 
-    color:#003B7A;
+.resource-card h3 {
+
+    color: #003B7A;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.2rem;
+
+    margin: 0;
 
 }
 
+
+/* ======================================================
+   ACTIVE CARD
+====================================================== */
+
+#learning-tab:checked ~ .resource-categories label[for="learning-tab"],
+#programming-tab:checked ~ .resource-categories label[for="programming-tab"],
+#datasets-tab:checked ~ .resource-categories label[for="datasets-tab"],
+#github-tab:checked ~ .resource-categories label[for="github-tab"] {
+
+    border-color: #C62828;
+
+}
+
+
+#learning-tab:checked ~ .resource-categories label[for="learning-tab"] .resource-icon,
+#programming-tab:checked ~ .resource-categories label[for="programming-tab"] .resource-icon,
+#datasets-tab:checked ~ .resource-categories label[for="datasets-tab"] .resource-icon,
+#github-tab:checked ~ .resource-categories label[for="github-tab"] .resource-icon {
+
+    color: #C62828;
+
+}
+
+
+#learning-tab:checked ~ .resource-categories label[for="learning-tab"] h3,
+#programming-tab:checked ~ .resource-categories label[for="programming-tab"] h3,
+#datasets-tab:checked ~ .resource-categories label[for="datasets-tab"] h3,
+#github-tab:checked ~ .resource-categories label[for="github-tab"] h3 {
+
+    color: #C62828;
+
+}
+
+
+/* ======================================================
+   RESOURCE GROUPS
+====================================================== */
+
+.resource-group {
+
+    display: none;
+
+    animation: resourceFade 0.4s ease;
+
+}
+
+
+.resource-group h3 {
+
+    color: #003B7A;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.8rem;
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* ======================================================
+   SHOW SELECTED RESOURCE
+====================================================== */
+
+#learning-tab:checked ~ .learning-group {
+
+    display: block;
+
+}
+
+
+#programming-tab:checked ~ .programming-group {
+
+    display: block;
+
+}
+
+
+#datasets-tab:checked ~ .datasets-group {
+
+    display: block;
+
+}
+
+
+#github-tab:checked ~ .github-group {
+
+    display: block;
+
+}
+
+
+/* ======================================================
+   RESOURCE LIST
+====================================================== */
+
+.resource-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.resource-list a {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 12px;
+
+    color: #003B7A;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+
+}
+
+
+.resource-list a:hover {
+
+    border-color: #C62828;
+
+    color: #C62828;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ======================================================
+   ANIMATION
+====================================================== */
+
+@keyframes resourceFade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(10px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ======================================================
+   TABLET
+====================================================== */
+
+@media (max-width: 992px) {
+
+    .resource-categories {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .resource-list {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .resource-categories {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .resource-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .resource-card {
+
+        padding: 30px 25px;
+
+    }
+
+}
 
 /* ======================================================
    EVENTS
