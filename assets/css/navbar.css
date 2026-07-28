@@ -2,11 +2,11 @@
    NAVBAR
 ====================================================== */
 
-nav {
+.navbar {
     width: 100%;
     height: 75px;
 
-    background: #003B7A;
+    background-color: #003B7A;
 
     display: flex;
     align-items: center;
@@ -18,10 +18,9 @@ nav {
 
     position: sticky;
     top: 0;
-
     z-index: 1000;
 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
 }
 
 
@@ -29,7 +28,7 @@ nav {
    LOGO
 ====================================================== */
 
-.nav-logo {
+.navbar .logo {
     color: #ffffff;
 
     font-family: "Poppins", sans-serif;
@@ -41,6 +40,13 @@ nav {
     text-decoration: none;
 
     letter-spacing: -1px;
+
+    transition: 0.3s ease;
+}
+
+
+.navbar .logo:hover {
+    color: #C62828;
 }
 
 
@@ -48,7 +54,7 @@ nav {
    NAVIGATION LINKS
 ====================================================== */
 
-.nav-links {
+.navbar .nav-links {
     display: flex;
 
     align-items: center;
@@ -59,7 +65,9 @@ nav {
 }
 
 
-.nav-links a {
+/* Individual links */
+
+.navbar .nav-links a {
     position: relative;
 
     display: flex;
@@ -78,15 +86,15 @@ nav {
 
     text-decoration: none;
 
-    transition: 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 
 /* ======================================================
-   HOVER
+   HOVER EFFECT
 ====================================================== */
 
-.nav-links a:hover {
+.navbar .nav-links a:hover {
     color: #C62828;
 }
 
@@ -95,14 +103,16 @@ nav {
    ACTIVE LINK
 ====================================================== */
 
-.nav-links a.active {
+.navbar .nav-links a.active {
     color: #C62828;
 }
 
 
-/* Red underline */
+/* ======================================================
+   ACTIVE LINK UNDERLINE
+====================================================== */
 
-.nav-links a.active::after {
+.navbar .nav-links a.active::after {
     content: "";
 
     position: absolute;
@@ -117,7 +127,7 @@ nav {
 
     height: 3px;
 
-    background: #C62828;
+    background-color: #C62828;
 
     border-radius: 10px;
 }
@@ -127,45 +137,71 @@ nav {
    MOBILE MENU BUTTON
 ====================================================== */
 
-.menu-toggle {
+.navbar .menu-toggle {
     display: none;
-
-    background: none;
-
-    border: none;
 
     color: #ffffff;
 
     font-size: 1.6rem;
 
     cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.navbar .menu-toggle:hover {
+    color: #C62828;
 }
 
 
 /* ======================================================
-   RESPONSIVE
+   TABLET
+====================================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .navbar .nav-links {
+        gap: 35px;
+    }
+
+}
+
+
+/* ======================================================
+   MOBILE
 ====================================================== */
 
 @media (max-width: 768px) {
 
-    nav {
+    .navbar {
         height: 65px;
 
         padding: 0 20px;
     }
 
 
-    .nav-logo {
+    /* Logo */
+
+    .navbar .logo {
         font-size: 1.5rem;
     }
 
 
-    .nav-links {
+    /* Hide desktop links */
+
+    .navbar .nav-links {
         display: none;
     }
 
 
-    .menu-toggle {
+    /* Show hamburger */
+
+    .navbar .menu-toggle {
         display: block;
     }
 
