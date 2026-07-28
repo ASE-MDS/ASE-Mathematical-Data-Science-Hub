@@ -1225,7 +1225,7 @@
 
 
 /* ======================================================
-   HIDE RADIO BUTTONS
+   HIDE CHECKBOX
 ====================================================== */
 
 .event-toggle {
@@ -1318,7 +1318,7 @@
 
 
 /* ======================================================
-   PLUS / ARROW ICON
+   PLUS ICON
 ====================================================== */
 
 .event-arrow {
@@ -1349,7 +1349,7 @@
 
 
 /* ======================================================
-   HIDDEN EVENTS
+   EVENT LIST
 ====================================================== */
 
 .event-list {
@@ -1362,7 +1362,7 @@
 
 
 /* ======================================================
-   SHOW EVENTS WHEN CATEGORY IS SELECTED
+   SHOW EVENTS WHEN CHECKBOX IS CHECKED
 ====================================================== */
 
 .event-toggle:checked ~ .event-list {
@@ -1392,7 +1392,7 @@
 }
 
 
-/* Active category arrow */
+/* Active plus icon */
 
 .event-toggle:checked ~ .event-category-card .event-arrow {
 
@@ -1404,7 +1404,7 @@
 
 
 /* ======================================================
-   INDIVIDUAL EVENT CARD
+   EVENT ITEM
 ====================================================== */
 
 .event-item {
@@ -1428,9 +1428,11 @@
 
 .event-item:hover {
 
+    transform: translateY(-3px);
+
     border-color: #003B7A;
 
-    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 
 }
 
@@ -1667,7 +1669,6 @@
     }
 
 }
-
 
 /* ======================================================
    NEWS
