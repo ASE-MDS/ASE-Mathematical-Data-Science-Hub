@@ -1,313 +1,82 @@
-/* ===========================
-   NAVBAR
-=========================== */
+/* ======================================================
+   NAVIGATION BAR
+====================================================== */
 
-.navbar {
+nav {
 
-    position: fixed;
+    background: #003B7A;
 
-    top: 0;
-    left: 0;
+    color: #ffffff;
 
-    width: 100%;
-    height: 90px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+
+}
+
+
+nav a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+
+}
+
+
+nav a:hover {
+
+    color: #C62828;
+
+}
+
+
+/* Active navigation link */
+
+nav a.active {
+
+    color: #C62828;
+
+}
+
+
+/* ======================================================
+   NAVIGATION BUTTON
+====================================================== */
+
+nav .nav-button {
+
+    background: #C62828;
+
+    color: #ffffff;
+
+    border-radius: 30px;
+
+    padding: 10px 20px;
+
+    transition: 0.3s ease;
+
+}
+
+
+nav .nav-button:hover {
 
     background: #ffffff;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 8%;
-
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-
-    z-index: 1000;
-
-}
-
-
-/* ===========================
-   LOGO — MDS
-=========================== */
-
-.logo {
-
-    position: relative;
-
-    text-decoration: none;
-
     color: #003B7A;
 
-    font-size: 2.2rem;
-
-    font-weight: 700;
-
-    font-family: "Poppins", sans-serif;
-
-    transition: 0.3s;
-
 }
 
 
-/* Logo hover */
-
-.logo:hover {
-
-    color: #C62828;
-
-}
-
-
-/* Red line under active logo */
-
-.logo.active::after {
-
-    content: "";
-
-    position: absolute;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    bottom: -18px;
-
-    width: 42px;
-
-    height: 3px;
-
-    background: #C62828;
-
-    border-radius: 5px;
-
-}
-
-
-/* ===========================
-   NAVIGATION LINKS
-=========================== */
-
-.nav-links {
-
-    display: flex;
-
-    gap: 70px;
-
-}
-
-
-.nav-links a {
-
-    position: relative;
-
-    text-decoration: none;
-
-    color: #16254a;
-
-    font-size: 1.2rem;
-
-    font-weight: 600;
-
-    font-family: "Poppins", sans-serif;
-
-    transition: 0.3s;
-
-}
-
-
-/* Hover */
-
-.nav-links a:hover {
-
-    color: #C62828;
-
-}
-
-
-/* Active link */
-
-.nav-links a.active {
-
-    color: #C62828;
-
-}
-
-
-/* Red line under active link */
-
-.nav-links a.active::after {
-
-    content: "";
-
-    position: absolute;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    bottom: -18px;
-
-    width: 42px;
-
-    height: 3px;
-
-    background: #C62828;
-
-    border-radius: 5px;
-
-}
-
-
-/* ===========================
-   MOBILE MENU CHECKBOX
-=========================== */
-
-.menu-checkbox {
-
-    display: none;
-
-}
-
-
-/* ===========================
-   MOBILE HAMBURGER BUTTON
-=========================== */
-
-.menu-toggle {
-
-    display: none;
-
-    font-size: 1.8rem;
-
-    color: #003B7A;
-
-    cursor: pointer;
-
-    z-index: 1001;
-
-}
-
-
-/* ===========================
+/* ======================================================
    MOBILE NAVIGATION
-=========================== */
+====================================================== */
 
 @media (max-width: 768px) {
 
+    nav {
 
-    /* Navbar */
-
-    .navbar {
-
-        position: fixed;
-
-        top: 0;
-
-        left: 0;
-
-        width: 100%;
-
-        height: 75px;
-
-        padding: 0 7%;
-
-    }
-
-
-    /* MDS Logo */
-
-    .logo {
-
-        font-size: 1.8rem;
-
-    }
-
-
-    /* Hamburger */
-
-    .menu-toggle {
-
-        display: block;
-
-    }
-
-
-    /* Hide menu by default */
-
-    .nav-links {
-
-        display: none;
-
-        position: absolute;
-
-        top: 75px;
-
-        left: 0;
-
-        width: 100%;
-
-        background: #ffffff;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 0;
-
-        padding: 15px 0;
-
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-
-        z-index: 1000;
-
-    }
-
-
-    /* Navigation links */
-
-    .nav-links a {
-
-        display: block;
-
-        width: 100%;
-
-        padding: 18px 20px;
-
-        text-align: center;
-
-        color: #003B7A;
-
-        font-size: 1.1rem;
-
-    }
-
-
-    /* Hover */
-
-    .nav-links a:hover {
-
-        color: #C62828;
-
-        background: #f8f8f8;
-
-    }
-
-
-    /* Active link */
-
-    .nav-links a.active {
-
-        color: #C62828;
-
-    }
-
-
-    /* Open menu */
-
-    .menu-checkbox:checked ~ .nav-links {
-
-        display: flex;
+        padding: 15px 20px;
 
     }
 
