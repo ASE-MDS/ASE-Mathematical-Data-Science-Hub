@@ -39,11 +39,8 @@
 
     text-decoration: none;
 
-    letter-spacing: -1px;
-
     transition: 0.3s ease;
 }
-
 
 .navbar .logo:hover {
     color: #C62828;
@@ -56,25 +53,13 @@
 
 .navbar .nav-links {
     display: flex;
-
     align-items: center;
-
     gap: 55px;
-
-    height: 100%;
 }
 
 
-/* Individual links */
-
 .navbar .nav-links a {
     position: relative;
-
-    display: flex;
-
-    align-items: center;
-
-    height: 100%;
 
     color: #ffffff;
 
@@ -86,12 +71,14 @@
 
     text-decoration: none;
 
+    padding: 27px 0;
+
     transition: color 0.3s ease;
 }
 
 
 /* ======================================================
-   HOVER EFFECT
+   HOVER
 ====================================================== */
 
 .navbar .nav-links a:hover {
@@ -109,7 +96,7 @@
 
 
 /* ======================================================
-   ACTIVE LINK UNDERLINE
+   ACTIVE UNDERLINE
 ====================================================== */
 
 .navbar .nav-links a.active::after {
@@ -123,7 +110,7 @@
 
     transform: translateX(-50%);
 
-    width: 38px;
+    width: 46px;
 
     height: 3px;
 
@@ -134,41 +121,13 @@
 
 
 /* ======================================================
-   MOBILE MENU BUTTON
+   MENU TOGGLE
 ====================================================== */
+
+/* Caché sur ordinateur */
 
 .navbar .menu-toggle {
     display: none;
-
-    color: #ffffff;
-
-    font-size: 1.6rem;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-
-.navbar .menu-toggle:hover {
-    color: #C62828;
-}
-
-
-/* ======================================================
-   TABLET
-====================================================== */
-
-@media (max-width: 900px) {
-
-    .navbar {
-        padding: 0 5%;
-    }
-
-    .navbar .nav-links {
-        gap: 35px;
-    }
-
 }
 
 
@@ -180,29 +139,28 @@
 
     .navbar {
         height: 65px;
-
         padding: 0 20px;
     }
 
-
-    /* Logo */
 
     .navbar .logo {
         font-size: 1.5rem;
     }
 
 
-    /* Hide desktop links */
-
     .navbar .nav-links {
         display: none;
     }
 
 
-    /* Show hamburger */
-
     .navbar .menu-toggle {
         display: block;
+
+        color: #ffffff;
+
+        font-size: 1.5rem;
+
+        cursor: pointer;
     }
 
 }
