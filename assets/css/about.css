@@ -1130,84 +1130,541 @@
 }
 
 /* ======================================================
-   EVENTS
+   EVENTS SECTION
 ====================================================== */
 
-.timeline{
+.events-section {
 
-    max-width:900px;
+    padding: 100px 20px;
 
-    margin:auto;
-
-    position:relative;
-
-    padding-left:40px;
+    background: #F8F9FB;
 
 }
 
 
-.timeline::before{
+/* ======================================================
+   SECTION HEADER
+====================================================== */
 
-    content:"";
+.section-header {
 
-    position:absolute;
+    text-align: center;
 
-    left:12px;
-
-    top:0;
-
-    bottom:0;
-
-    width:3px;
-
-    background:#C62828;
+    margin-bottom: 70px;
 
 }
 
 
-.timeline-item{
+.section-number {
 
-    position:relative;
+    display: block;
 
-    margin-bottom:50px;
+    color: #C62828;
 
-    background:#fff;
+    font-size: 1.1rem;
 
-    padding:30px;
+    font-weight: 700;
 
-    border-radius:16px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    margin-bottom: 25px;
 
 }
 
 
-.timeline-item::before{
+.section-header h2 {
 
-    content:"";
+    margin: 0;
 
-    position:absolute;
+    color: #003B7A;
 
-    left:-38px;
+    font-family: "Poppins", sans-serif;
 
-    top:32px;
+    font-size: 3.2rem;
 
-    width:18px;
-
-    height:18px;
-
-    border-radius:50%;
-
-    background:#C62828;
+    font-weight: 700;
 
 }
 
 
-.timeline-item h4{
+.section-line {
 
-    color:#003B7A;
+    width: 85px;
 
-    margin-bottom:12px;
+    height: 5px;
+
+    margin: 35px auto 0;
+
+    background: #C62828;
+
+    border-radius: 10px;
+
+}
+
+
+/* ======================================================
+   EVENTS CONTAINER
+====================================================== */
+
+.events-container {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+
+/* ======================================================
+   EVENT CATEGORY
+====================================================== */
+
+.event-category {
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ======================================================
+   HIDE RADIO BUTTONS
+====================================================== */
+
+.event-toggle {
+
+    display: none;
+
+}
+
+
+/* ======================================================
+   EVENT CATEGORY BUTTON
+====================================================== */
+
+.event-category-card {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    width: 100%;
+
+    padding: 35px 40px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s ease;
+
+}
+
+
+.event-category-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #003B7A;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* ======================================================
+   CATEGORY TITLE
+====================================================== */
+
+.event-category-card h3 {
+
+    margin: 0 0 12px;
+
+    color: #003B7A;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.3rem;
+
+    font-weight: 600;
+
+}
+
+
+/* ======================================================
+   CATEGORY DESCRIPTION
+====================================================== */
+
+.event-category-card p {
+
+    margin: 0;
+
+    color: #555555;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* ======================================================
+   PLUS / ARROW ICON
+====================================================== */
+
+.event-arrow {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #003B7A;
+
+    color: #ffffff;
+
+    font-size: 1.5rem;
+
+    transition: 0.3s ease;
+
+}
+
+
+/* ======================================================
+   HIDDEN EVENTS
+====================================================== */
+
+.event-list {
+
+    display: none;
+
+    margin-top: 20px;
+
+}
+
+
+/* ======================================================
+   SHOW EVENTS WHEN CATEGORY IS SELECTED
+====================================================== */
+
+.event-toggle:checked ~ .event-list {
+
+    display: block;
+
+}
+
+
+/* ======================================================
+   ACTIVE CATEGORY
+====================================================== */
+
+.event-toggle:checked ~ .event-category-card {
+
+    border-color: #C62828;
+
+}
+
+
+/* Active category title */
+
+.event-toggle:checked ~ .event-category-card h3 {
+
+    color: #C62828;
+
+}
+
+
+/* Active category arrow */
+
+.event-toggle:checked ~ .event-category-card .event-arrow {
+
+    background: #C62828;
+
+    transform: rotate(45deg);
+
+}
+
+
+/* ======================================================
+   INDIVIDUAL EVENT CARD
+====================================================== */
+
+.event-item {
+
+    padding: 25px 30px;
+
+    margin-bottom: 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+
+    transition: 0.3s ease;
+
+}
+
+
+.event-item:hover {
+
+    border-color: #003B7A;
+
+    transform: translateY(-3px);
+
+}
+
+
+.event-item:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* ======================================================
+   EVENT DATE
+====================================================== */
+
+.event-date {
+
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+
+}
+
+
+/* Past dates */
+
+.event-date.past {
+
+    color: #C62828;
+
+}
+
+
+/* Upcoming dates */
+
+.event-date.upcoming {
+
+    color: #2E7D32;
+
+}
+
+
+/* ======================================================
+   EVENT TITLE
+====================================================== */
+
+.event-item h4 {
+
+    margin: 0 0 8px;
+
+    color: #003B7A;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+}
+
+
+/* ======================================================
+   EVENT DESCRIPTION
+====================================================== */
+
+.event-item p {
+
+    margin: 0;
+
+    color: #555555;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* ======================================================
+   TABLET
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .events-section {
+
+        padding: 70px 16px;
+
+    }
+
+
+    .section-header {
+
+        margin-bottom: 50px;
+
+    }
+
+
+    .section-header h2 {
+
+        font-size: 2.4rem;
+
+    }
+
+
+    .event-category-card {
+
+        padding: 25px 22px;
+
+        gap: 20px;
+
+    }
+
+
+    .event-category-card h3 {
+
+        font-size: 1.1rem;
+
+    }
+
+
+    .event-category-card p {
+
+        font-size: 0.9rem;
+
+        line-height: 1.6;
+
+    }
+
+
+    .event-arrow {
+
+        width: 35px;
+
+        height: 35px;
+
+        font-size: 1.3rem;
+
+    }
+
+
+    .event-item {
+
+        padding: 22px;
+
+    }
+
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 480px) {
+
+    .events-section {
+
+        padding: 60px 14px;
+
+    }
+
+
+    .section-header h2 {
+
+        font-size: 2rem;
+
+    }
+
+
+    .event-category {
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .event-category-card {
+
+        padding: 22px 18px;
+
+        gap: 15px;
+
+    }
+
+
+    .event-category-card h3 {
+
+        font-size: 1rem;
+
+    }
+
+
+    .event-category-card p {
+
+        font-size: 0.85rem;
+
+    }
+
+
+    .event-arrow {
+
+        width: 32px;
+
+        height: 32px;
+
+        font-size: 1.2rem;
+
+    }
+
+
+    .event-item {
+
+        padding: 20px;
+
+    }
+
+
+    .event-item h4 {
+
+        font-size: 1rem;
+
+    }
+
+
+    .event-item p {
+
+        font-size: 0.9rem;
+
+    }
 
 }
 
