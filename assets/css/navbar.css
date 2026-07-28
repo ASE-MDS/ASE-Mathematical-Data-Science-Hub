@@ -1,83 +1,172 @@
 /* ======================================================
-   NAVIGATION BAR
+   NAVBAR
 ====================================================== */
 
 nav {
+    width: 100%;
+    height: 75px;
 
     background: #003B7A;
 
-    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    padding: 0 8%;
 
+    box-sizing: border-box;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 
-nav a {
+/* ======================================================
+   LOGO
+====================================================== */
+
+.nav-logo {
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.8rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    letter-spacing: -1px;
+}
+
+
+/* ======================================================
+   NAVIGATION LINKS
+====================================================== */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 55px;
+
+    height: 100%;
+}
+
+
+.nav-links a {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    height: 100%;
 
     color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 600;
 
     text-decoration: none;
 
     transition: 0.3s ease;
-
-}
-
-
-nav a:hover {
-
-    color: #C62828;
-
-}
-
-
-/* Active navigation link */
-
-nav a.active {
-
-    color: #C62828;
-
 }
 
 
 /* ======================================================
-   NAVIGATION BUTTON
+   HOVER
 ====================================================== */
 
-nav .nav-button {
+.nav-links a:hover {
+    color: #C62828;
+}
+
+
+/* ======================================================
+   ACTIVE LINK
+====================================================== */
+
+.nav-links a.active {
+    color: #C62828;
+}
+
+
+/* Red underline */
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 38px;
+
+    height: 3px;
 
     background: #C62828;
 
-    color: #ffffff;
-
-    border-radius: 30px;
-
-    padding: 10px 20px;
-
-    transition: 0.3s ease;
-
-}
-
-
-nav .nav-button:hover {
-
-    background: #ffffff;
-
-    color: #003B7A;
-
+    border-radius: 10px;
 }
 
 
 /* ======================================================
-   MOBILE NAVIGATION
+   MOBILE MENU BUTTON
+====================================================== */
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    color: #ffffff;
+
+    font-size: 1.6rem;
+
+    cursor: pointer;
+}
+
+
+/* ======================================================
+   RESPONSIVE
 ====================================================== */
 
 @media (max-width: 768px) {
 
     nav {
+        height: 65px;
 
-        padding: 15px 20px;
+        padding: 0 20px;
+    }
 
+
+    .nav-logo {
+        font-size: 1.5rem;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .menu-toggle {
+        display: block;
     }
 
 }
