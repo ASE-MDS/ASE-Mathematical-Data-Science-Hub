@@ -1,135 +1,194 @@
-/* ===========================
+/* ======================================================
    FOOTER
-=========================== */
+====================================================== */
 
-footer{
+footer {
 
-    background:#ffffff;
+    background: #003B7A;
 
-    border-top:1px solid #e5e5e5;
+    color: #ffffff;
 
-    padding:35px 8%;
-
-}
-
-.footer-container{
-
-    display:grid;
-
-    grid-template-columns:2fr 2fr 1.5fr 1.5fr;
-
-    gap:35px;
-
-    align-items:center;
+    padding: 50px 20px;
 
 }
 
-.footer-column{
 
-    display:flex;
+.footer-container {
 
-    align-items:center;
+    max-width: 1200px;
 
-    gap:18px;
+    margin: 0 auto;
 
-}
+    display: grid;
 
-.footer-column:not(:last-child){
+    grid-template-columns: 2fr 2fr 1.5fr 1fr;
 
-    border-right:1px solid #d9d9d9;
+    gap: 40px;
 
-    padding-right:30px;
-
-}
-
-.footer-column i{
-
-    font-size:2rem;
-
-    color:#c62828;
-
-    min-width:35px;
+    align-items: center;
 
 }
 
-.footer-column h4{
 
-    color:#0b2c5d;
+.footer-column {
 
-    font-family:"Poppins",sans-serif;
+    display: flex;
 
-    font-size:1.15rem;
+    align-items: center;
 
-    margin-bottom:6px;
-
-}
-
-.footer-column p{
-
-    margin:0;
-
-    color:#333;
-
-    line-height:1.6;
+    gap: 15px;
 
 }
 
-.footer-column a{
 
-    color:#0b2c5d;
+.footer-column h4 {
 
-    text-decoration:none;
+    margin: 0 0 8px;
 
-}
+    color: #ffffff;
 
-.footer-column a:hover{
-
-    color:#c62828;
+    font-size: 1.1rem;
 
 }
 
-.footer-column.github i{
 
-    color:#0b2c5d;
+.footer-column p {
 
-}
+    margin: 5px 0;
 
-.footer-column.copyright{
+    color: rgba(255, 255, 255, 0.85);
 
-    justify-content:flex-end;
-
-    text-align:right;
+    line-height: 1.6;
 
 }
 
-.footer-column.copyright p{
 
-    line-height:1.5;
+.footer-column i {
 
-}
-.footer-emails{
+    color: #ffffff;
 
-    display:flex;
-    flex-direction:column;
-    gap:8px;
+    font-size: 1.5rem;
+
+    flex-shrink: 0;
 
 }
 
-.footer-emails a{
 
-    color:#0b2c5d;
+.footer-column a {
 
-    text-decoration:none;
+    color: #ffffff;
 
-    transition:.3s ease;
+    text-decoration: none;
 
-    font-size:.95rem;
+    transition: 0.3s ease;
+
+}
+
+
+.footer-column a:hover {
+
+    color: #C62828;
 
 }
 
-.footer-emails a:hover{
 
-    color:#C62828;
+/* GitHub */
+
+.footer-column.github {
+
+    display: flex;
+
+    align-items: center;
 
 }
+
+
+.footer-column.github i {
+
+    font-size: 1.7rem;
+
+}
+
+
+/* Copyright */
+
+.footer-column.copyright {
+
+    justify-content: flex-end;
+
+    text-align: right;
+
+}
+
+
+.footer-column.copyright p {
+
+    margin: 0;
+
+    font-size: 0.9rem;
+
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+/* ======================================================
+   FOOTER RESPONSIVE
+====================================================== */
+
+@media (max-width: 900px) {
+
+    .footer-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 30px;
+
+    }
+
+
+    .footer-column.copyright {
+
+        justify-content: flex-start;
+
+        text-align: left;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    footer {
+
+        padding: 40px 20px;
+
+    }
+
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .footer-column {
+
+        align-items: flex-start;
+
+    }
+
+
+    .footer-column.copyright {
+
+        justify-content: flex-start;
+
+        text-align: left;
+
+    }
+
 }
