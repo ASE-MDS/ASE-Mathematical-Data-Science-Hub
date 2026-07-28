@@ -539,11 +539,6 @@
    FOUNDING MEMBERS
 ====================================================== */
 
-
-/* ======================================================
-   FOUNDING MEMBERS GRID
-====================================================== */
-
 .founding-members-grid {
 
     max-width: 1200px;
@@ -559,13 +554,38 @@
 }
 
 
+/* Les 3 premières cartes */
+
+.founding-member-card:nth-child(1),
+.founding-member-card:nth-child(2),
+.founding-member-card:nth-child(3) {
+
+    grid-column: span 2;
+
+}
+
+
+/* Les 2 cartes de la deuxième ligne */
+
+.founding-member-card:nth-child(4) {
+
+    grid-column: 2 / span 2;
+
+}
+
+
+.founding-member-card:nth-child(5) {
+
+    grid-column: 4 / span 2;
+
+}
+
+
 /* ======================================================
    FOUNDING MEMBER CARD
 ====================================================== */
 
 .founding-member-card {
-
-    grid-column: span 2;
 
     padding: 35px 30px;
 
@@ -584,8 +604,6 @@
 }
 
 
-/* Hover */
-
 .founding-member-card:hover {
 
     transform: translateY(-7px);
@@ -598,32 +616,14 @@
 
 
 /* ======================================================
-   SECOND ROW — CENTERED
-====================================================== */
-
-.founding-member-card:nth-child(4) {
-
-    grid-column: 2 / span 2;
-
-}
-
-
-.founding-member-card:nth-child(5) {
-
-    grid-column: 4 / span 2;
-
-}
-
-
-/* ======================================================
    FOUNDING MEMBER PHOTO
 ====================================================== */
 
-.founding-member-photo {
+.founding-member-card img {
 
-    width: 70px;
+    width: 100px;
 
-    height: 70px;
+    height: 100px;
 
     margin: 0 auto 20px;
 
@@ -654,7 +654,7 @@
 
 
 /* ======================================================
-   FOUNDING MEMBER DESCRIPTION
+   INTEREST DOMAIN
 ====================================================== */
 
 .founding-member-card p {
@@ -713,7 +713,11 @@
     }
 
 
-    .founding-member-card {
+    .founding-member-card:nth-child(1),
+    .founding-member-card:nth-child(2),
+    .founding-member-card:nth-child(3),
+    .founding-member-card:nth-child(4),
+    .founding-member-card:nth-child(5) {
 
         grid-column: auto;
 
@@ -730,6 +734,16 @@
 
     .founding-members-grid {
 
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 0 20px;
+
+        box-sizing: border-box;
+
+        display: grid;
+
         grid-template-columns: 1fr;
 
         gap: 25px;
@@ -737,13 +751,33 @@
     }
 
 
-    .founding-member-card {
+    .founding-member-card:nth-child(1),
+    .founding-member-card:nth-child(2),
+    .founding-member-card:nth-child(3),
+    .founding-member-card:nth-child(4),
+    .founding-member-card:nth-child(5) {
 
         grid-column: auto;
 
         width: 100%;
 
         box-sizing: border-box;
+
+    }
+
+
+    .founding-member-card {
+
+        padding: 30px 25px;
+
+    }
+
+
+    .founding-member-card img {
+
+        width: 90px;
+
+        height: 90px;
 
     }
 
