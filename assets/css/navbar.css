@@ -39,21 +39,55 @@
 
     text-decoration: none;
 
+    position: relative;
+
+    padding: 26px 0;
+
     transition: color 0.3s ease;
 }
 
 
-/* Logo au survol */
+/* ======================================================
+   LOGO ACTIF
+   Rouge + souligné
+   Fonctionne sur PC et mobile
+====================================================== */
 
-.navbar .logo:hover {
+.navbar .logo.active {
     color: #C62828;
 }
 
 
-/* Logo actif = page actuelle */
+/* Soulignement du logo actif */
 
-.navbar .logo.active {
-    color: #ffffff;
+.navbar .logo.active::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 45px;
+
+    height: 3px;
+
+    background-color: #C62828;
+
+    border-radius: 10px;
+}
+
+
+/* ======================================================
+   HOVER DU LOGO
+   Uniquement lorsqu'il n'est pas actif
+====================================================== */
+
+.navbar .logo:not(.active):hover {
+    color: #C62828;
 }
 
 
@@ -183,6 +217,8 @@
 
     .navbar .logo {
         font-size: 1.5rem;
+
+        padding: 21px 0;
     }
 
 
