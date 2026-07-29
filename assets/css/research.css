@@ -295,138 +295,133 @@
 }
 
 
-/* ======================================================
-   CURRENT RESEARCHERS
-====================================================== */
+/* ================= CURRENT RESEARCHERS ================= */
 
 .researchers-grid {
-
-    max-width: 1200px;
-
-    margin: 0 auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
-    gap: 30px;
-
+    gap: 34px;
+    max-width: 1500px;
+    margin: 70px auto 0;
+    padding: 0 40px;
 }
-
-
-/* Researcher card */
 
 .researcher-card {
-
-    padding: 35px 30px;
-
     background: #ffffff;
-
-    border: 1px solid #E5E7EB;
-
-    border-radius: 15px;
-
+    border: 1px solid #e1e5ea;
+    border-radius: 20px;
+    padding: 44px 35px;
     text-align: center;
-
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-
-    transition: 0.3s ease;
-
-}
-
-
-.researcher-card:hover {
-
-    transform: translateY(-7px);
-
-    border-color: #003B7A;
-
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
-
-}
-
-
-/* Researcher icon */
-
-.researcher-icon {
-
-    width: 70px;
-
-    height: 70px;
-
-    margin: 0 auto 20px;
+    min-height: 350px;
 
     display: flex;
-
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.researcher-card:hover {
+    transform: translateY(-6px);
+    border-color: #d62828;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.10);
+}
+
+/* Icône */
+
+.researcher-icon {
+    width: 88px;
+    height: 88px;
+
+    display: flex;
     align-items: center;
+    justify-content: center;
+
+    background-color: #064785;
+    color: white;
 
     border-radius: 50%;
 
-    background: #003B7A;
-
-    color: #ffffff;
-
-    font-size: 28px;
-
+    margin-bottom: 28px;
 }
 
+.researcher-icon i {
+    font-size: 34px;
+}
 
-/* Researcher name */
+/* Nom */
 
 .researcher-card h3 {
-
-    color: #003B7A;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 1.2rem;
-
-    margin-bottom: 12px;
-
+    color: #064785;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 20px;
 }
 
-
-/* Researcher description */
+/* Description */
 
 .researcher-card p {
-
-    color: #555555;
-
-    font-size: 0.95rem;
-
-    line-height: 1.7;
-
-    margin-bottom: 20px;
-
+    color: #444;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 28px;
 }
 
-
-/* Google Site link */
+/* Google Site */
 
 .researcher-card a {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    color: #C62828;
-
-    font-weight: 600;
-
+    color: #d62828;
+    font-size: 18px;
+    font-weight: 700;
     text-decoration: none;
 
-    transition: 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    transition: color 0.3s ease;
+}
+
+.researcher-card a:hover {
+    color: #064785;
+}
+
+.researcher-card a i {
+    font-size: 16px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablettes */
+
+@media (max-width: 1000px) {
+
+    .researchers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 25px;
+    }
 
 }
 
 
-.researcher-card a:hover {
+/* Téléphones */
 
-    color: #003B7A;
+@media (max-width: 650px) {
+
+    .researchers-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 20px;
+    }
+
+    .researcher-card {
+        min-height: 320px;
+    }
 
 }
 
