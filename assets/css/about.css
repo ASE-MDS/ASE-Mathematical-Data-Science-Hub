@@ -11,8 +11,8 @@
 
     height:55vh;
 
-    background:url("../images/about/about-hero.jpg")
-               center center/cover no-repeat;
+   background: url("../images/hero/about-hero.png")
+    center center/cover no-repeat;
 
     position:relative;
 
