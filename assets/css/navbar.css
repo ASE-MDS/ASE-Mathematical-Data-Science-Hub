@@ -42,8 +42,17 @@
     transition: color 0.3s ease;
 }
 
-/* Le logo ne devient pas rouge */
+
+/* Logo au survol */
+
 .navbar .logo:hover {
+    color: #C62828;
+}
+
+
+/* Logo actif = page actuelle */
+
+.navbar .logo.active {
     color: #ffffff;
 }
 
@@ -54,7 +63,9 @@
 
 .navbar .nav-links {
     display: flex;
+
     align-items: center;
+
     gap: 55px;
 }
 
@@ -122,11 +133,30 @@
 
 
 /* ======================================================
-   MENU TOGGLE
+   MOBILE MENU CHECKBOX
 ====================================================== */
+
+/* Cache le carré blanc du checkbox */
+
+.navbar .menu-checkbox {
+    display: none;
+}
+
+
+/* ======================================================
+   MENU HAMBURGER
+====================================================== */
+
+/* Caché sur ordinateur */
 
 .navbar .menu-toggle {
     display: none;
+
+    color: #ffffff;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
 }
 
 
@@ -136,21 +166,29 @@
 
 @media (max-width: 768px) {
 
+    /* -----------------------------
+       NAVBAR MOBILE
+    ----------------------------- */
+
     .navbar {
         height: 65px;
+
         padding: 0 20px;
     }
 
+
+    /* -----------------------------
+       LOGO MOBILE
+    ----------------------------- */
 
     .navbar .logo {
         font-size: 1.5rem;
     }
 
 
-    .navbar .nav-links {
-        display: none;
-    }
-
+    /* -----------------------------
+       HAMBURGER
+    ----------------------------- */
 
     .navbar .menu-toggle {
         display: block;
@@ -160,6 +198,97 @@
         font-size: 1.5rem;
 
         cursor: pointer;
+
+        z-index: 1001;
+    }
+
+
+    /* -----------------------------
+       NAVIGATION MOBILE
+    ----------------------------- */
+
+    .navbar .nav-links {
+
+        position: absolute;
+
+        top: 65px;
+
+        left: 0;
+
+        width: 100%;
+
+        background-color: #003B7A;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 0;
+
+        padding: 10px 0 20px;
+
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+
+    /* -----------------------------
+       LIENS MOBILE
+    ----------------------------- */
+
+    .navbar .nav-links a {
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 15px 0;
+
+        color: #ffffff;
+
+        font-size: 1rem;
+    }
+
+
+    /* -----------------------------
+       HOVER MOBILE
+    ----------------------------- */
+
+    .navbar .nav-links a:hover {
+        color: #C62828;
+    }
+
+
+    /* -----------------------------
+       ACTIVE MOBILE
+    ----------------------------- */
+
+    .navbar .nav-links a.active {
+        color: #C62828;
+    }
+
+
+    /* -----------------------------
+       ACTIVE UNDERLINE MOBILE
+    ----------------------------- */
+
+    .navbar .nav-links a.active::after {
+
+        bottom: 5px;
+
+        width: 40px;
+
+        height: 3px;
+    }
+
+
+    /* -----------------------------
+       OUVERTURE DU MENU
+    ----------------------------- */
+
+    .navbar .menu-checkbox:checked ~ .nav-links {
+        display: flex;
     }
 
 }
