@@ -1,74 +1,165 @@
-/* ================= MAIN NAVBAR ================= */
+/* ======================================================
+   NAVBAR
+====================================================== */
 
 .navbar {
-    background-color: #064581;
     width: 100%;
-    height: 80px;
+    height: 75px;
+
+    background-color: #003B7A;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    padding: 0 5%;
+    padding: 0 8%;
 
     box-sizing: border-box;
 
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 1000;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
 }
 
 
-/* ================= NAVBAR LINKS ================= */
+/* ======================================================
+   LOGO
+====================================================== */
 
-.navbar a {
+.navbar .logo {
     color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.8rem;
+
+    font-weight: 700;
+
     text-decoration: none;
 
     transition: color 0.3s ease;
 }
 
-
-/* ================= ACTIVE LINK ================= */
-
-/* Le lien de la page actuelle */
-
-.navbar a.active {
-    color: #d62828;
+/* Le logo ne devient pas rouge */
+.navbar .logo:hover {
+    color: #ffffff;
 }
 
 
-/* ================= HOVER ================= */
+/* ======================================================
+   NAVIGATION LINKS
+====================================================== */
 
-.navbar a:hover {
-    color: #d62828;
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 55px;
 }
 
 
-/* ================= MDS ACTIVE ================= */
+.navbar .nav-links a {
+    position: relative;
 
-/* Sur la page d'accueil / MDS */
+    color: #ffffff;
 
-.navbar a.active::after {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    padding: 27px 0;
+
+    transition: color 0.3s ease;
+}
+
+
+/* ======================================================
+   HOVER
+====================================================== */
+
+.navbar .nav-links a:hover {
+    color: #C62828;
+}
+
+
+/* ======================================================
+   ACTIVE LINK
+====================================================== */
+
+.navbar .nav-links a.active {
+    color: #C62828;
+}
+
+
+/* ======================================================
+   ACTIVE UNDERLINE
+====================================================== */
+
+.navbar .nav-links a.active::after {
     content: "";
 
-    display: block;
+    position: absolute;
 
-    width: 100%;
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 46px;
+
     height: 3px;
 
-    background-color: #d62828;
+    background-color: #C62828;
 
-    margin-top: 5px;
-
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 
-/* ================= SUPPRIMER ELEMENT VIDE ================= */
+/* ======================================================
+   MENU TOGGLE
+====================================================== */
 
-/* Si le petit carré blanc vient d'un élément vide */
-
-.navbar .empty,
-.navbar .placeholder,
-.navbar .nav-placeholder {
+.navbar .menu-toggle {
     display: none;
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: 65px;
+        padding: 0 20px;
+    }
+
+
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+
+
+    .navbar .nav-links {
+        display: none;
+    }
+
+
+    .navbar .menu-toggle {
+        display: block;
+
+        color: #ffffff;
+
+        font-size: 1.5rem;
+
+        cursor: pointer;
+    }
+
 }
