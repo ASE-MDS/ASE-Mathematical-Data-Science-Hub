@@ -82,34 +82,7 @@
 
 .connect-subnav a.active {
 
-    color: #C62828;
-
-}
-
-
-/* ======================================================
-   ACTIVE SUBNAV UNDERLINE
-====================================================== */
-
-.connect-subnav a.active::after {
-
-    content: "";
-
-    position: absolute;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    bottom: -8px;
-
-    width: 30px;
-
-    height: 3px;
-
-    background-color: #C62828;
-
-    border-radius: 10px;
+    color: #ffffff;
 
 }
 
