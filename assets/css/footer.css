@@ -182,7 +182,7 @@ footer {
 
         border-left: none;
         border-top: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        border-bottom: none;
 
         box-sizing: border-box;
     }
@@ -194,6 +194,8 @@ footer {
 
         padding-top: 0;
         padding-bottom: 10px;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .footer-column:first-child h4 {
@@ -216,6 +218,15 @@ footer {
 
 
     /* ================= EMAIL ================= */
+
+    .footer-column:nth-child(2) {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        /* UN SEUL TRAIT AVANT LE COPYRIGHT */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
 
     .footer-email {
 
@@ -272,9 +283,8 @@ footer {
 
         text-align: center;
 
-        border-top: none;
-
-        border-bottom: none;
+        /* AUCUN TRAIT SUR LE COPYRIGHT */
+        border: none !important;
     }
 
     .footer-column.copyright p {
