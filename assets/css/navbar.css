@@ -209,6 +209,27 @@
 
         padding: 0 20px;
     }
+   /* Logo MDS actif sur mobile */
+.navbar .logo.active {
+    color: #C62828;
+}
+
+.navbar .logo.active::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 40px;
+    height: 3px;
+
+    background-color: #C62828;
+
+    border-radius: 10px;
+}
 
 
     /* -----------------------------
