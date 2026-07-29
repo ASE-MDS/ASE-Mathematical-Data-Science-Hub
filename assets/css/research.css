@@ -295,132 +295,252 @@
 }
 
 
-/* ================= CURRENT RESEARCHERS ================= */
+/* ======================================================
+   CURRENT RESEARCHERS
+====================================================== */
+
+.research-section {
+    padding: 80px 5%;
+    background: #F7F8FA;
+}
+
+
+/* ======================================================
+   SECTION HEADER
+====================================================== */
+
+.research-section .section-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.research-section .section-header span {
+    display: block;
+    color: #C62828;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.research-section .section-header h2 {
+    color: #003B7A;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.research-section .section-line {
+    width: 85px;
+    height: 5px;
+    background: #C62828;
+    border-radius: 5px;
+    margin: 35px auto 0;
+}
+
+
+/* ======================================================
+   RESEARCHERS GRID
+====================================================== */
 
 .researchers-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
-    gap: 34px;
-    max-width: 1500px;
-    margin: 70px auto 0;
-    padding: 0 40px;
+
+    gap: 36px;
 }
+
+
+/* ======================================================
+   RESEARCHER CARD
+====================================================== */
 
 .researcher-card {
     background: #ffffff;
-    border: 1px solid #e1e5ea;
-    border-radius: 20px;
-    padding: 44px 35px;
+
+    border: 1px solid #E1E5EA;
+
+    border-radius: 15px;
+
+    padding: 35px 30px;
+
     text-align: center;
+
     min-height: 350px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 
     transition: all 0.3s ease;
 }
 
+
+/* ======================================================
+   CARD HOVER
+====================================================== */
+
 .researcher-card:hover {
-    transform: translateY(-6px);
-    border-color: #d62828;
-    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.10);
+    transform: translateY(-7px);
+
+    border-color: #003B7A;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
 }
 
-/* Icône */
+
+/* ======================================================
+   RESEARCHER PHOTO / ICON
+====================================================== */
 
 .researcher-icon {
-    width: 88px;
-    height: 88px;
+    width: 110px;
+    height: 110px;
+
+    margin: 0 auto 25px;
 
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    background-color: #064785;
-    color: white;
+    align-items: center;
 
     border-radius: 50%;
 
-    margin-bottom: 28px;
+    background: #003B7A;
+
+    color: #ffffff;
+
+    font-size: 38px;
+
+    overflow: hidden;
 }
 
-.researcher-icon i {
-    font-size: 34px;
+
+/* Si tu utilises une vraie photo */
+
+.researcher-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
 }
 
-/* Nom */
+
+/* ======================================================
+   RESEARCHER NAME
+====================================================== */
 
 .researcher-card h3 {
-    color: #064785;
-    font-size: 24px;
+    color: #003B7A;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.2rem;
+
     font-weight: 700;
-    margin: 0 0 20px;
+
+    margin: 0 0 15px;
 }
 
-/* Description */
+
+/* ======================================================
+   RESEARCHER DESCRIPTION
+====================================================== */
 
 .researcher-card p {
-    color: #444;
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 0 0 28px;
+    color: #555555;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+    margin: 0 0 25px;
+
+    max-width: 320px;
 }
 
-/* Google Site */
+
+/* ======================================================
+   CLICK TO READ LINK
+====================================================== */
 
 .researcher-card a {
-    color: #d62828;
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
-
     display: inline-flex;
+
     align-items: center;
+
     gap: 8px;
 
-    transition: color 0.3s ease;
+    margin-top: auto;
+
+    color: #C62828;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
 }
+
 
 .researcher-card a:hover {
-    color: #064785;
+    color: #003B7A;
 }
+
+
+/* ======================================================
+   EXTERNAL LINK ICON
+====================================================== */
 
 .researcher-card a i {
-    font-size: 16px;
+    font-size: 0.9rem;
 }
 
 
-/* ================= RESPONSIVE ================= */
-
-/* Tablettes */
+/* ======================================================
+   TABLET
+====================================================== */
 
 @media (max-width: 1000px) {
 
     .researchers-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-        padding: 0 25px;
+        gap: 30px;
     }
 
 }
 
 
-/* Téléphones */
+/* ======================================================
+   MOBILE
+====================================================== */
 
 @media (max-width: 650px) {
+
+    .research-section {
+        padding: 60px 20px;
+    }
+
+    .research-section .section-header h2 {
+        font-size: 2rem;
+    }
 
     .researchers-grid {
         grid-template-columns: 1fr;
         gap: 25px;
-        padding: 0 20px;
     }
 
     .researcher-card {
-        min-height: 320px;
+        min-height: 330px;
     }
 
 }
