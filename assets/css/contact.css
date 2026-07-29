@@ -82,10 +82,32 @@
 
 .connect-subnav a.active {
 
-    color: #ffffff;
+    color: #003B7A;
 
 }
 
+
+.connect-subnav a.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    bottom: -8px;
+
+    width: 30px;
+
+    height: 3px;
+
+    background: #C62828;
+
+    border-radius: 10px;
+
+}
 
 /* ======================================================
    CONTACT SECTIONS
