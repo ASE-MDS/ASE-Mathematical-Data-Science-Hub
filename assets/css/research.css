@@ -344,14 +344,13 @@
 ====================================================== */
 
 .researchers-grid {
-    max-width: 1200px;
+    max-width: 1050px;          /* avant 1200px */
     margin: 0 auto;
 
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 36px;
+    gap: 28px;                  /* avant 36px */
 }
 
 
@@ -361,24 +360,22 @@
 
 .researcher-card {
     background: #ffffff;
-
     border: 1px solid #E1E5EA;
-
     border-radius: 15px;
 
-    padding: 35px 30px;
+    padding: 28px 22px;         /* réduit */
 
     text-align: center;
 
-    min-height: 350px;
+    min-height: 300px;          /* avant 350px */
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
 
-    transition: all 0.3s ease;
+    transition: .3s ease;
 }
 
 
@@ -387,11 +384,11 @@
 ====================================================== */
 
 .researcher-card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-6px);
 
     border-color: #003B7A;
 
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 15px 30px rgba(0,0,0,.10);
 }
 
 
@@ -400,10 +397,10 @@
 ====================================================== */
 
 .researcher-icon {
-    width: 110px;
-    height: 110px;
+    width: 90px;               /* avant 110px */
+    height: 90px;
 
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
 
     display: flex;
     justify-content: center;
@@ -412,23 +409,17 @@
     border-radius: 50%;
 
     background: #003B7A;
-
     color: #ffffff;
 
-    font-size: 38px;
+    font-size: 32px;           /* avant 38px */
 
     overflow: hidden;
 }
 
-
-/* Si tu utilises une vraie photo */
-
 .researcher-icon img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     border-radius: 50%;
 }
 
@@ -442,11 +433,10 @@
 
     font-family: "Poppins", sans-serif;
 
-    font-size: 1.2rem;
-
+    font-size: 1.1rem;         /* avant 1.2rem */
     font-weight: 700;
 
-    margin: 0 0 15px;
+    margin: 0 0 12px;
 }
 
 
@@ -457,13 +447,12 @@
 .researcher-card p {
     color: #555555;
 
-    font-size: 0.95rem;
+    font-size: .9rem;          /* avant .95rem */
+    line-height: 1.6;
 
-    line-height: 1.7;
+    margin: 0 0 20px;
 
-    margin: 0 0 25px;
-
-    max-width: 320px;
+    max-width: 260px;          /* avant 320px */
 }
 
 
@@ -476,21 +465,20 @@
 
     align-items: center;
 
-    gap: 8px;
+    gap: 6px;
 
     margin-top: auto;
 
     color: #C62828;
 
-    font-size: 0.95rem;
+    font-size: .9rem;
 
     font-weight: 600;
 
     text-decoration: none;
 
-    transition: all 0.3s ease;
+    transition: .3s ease;
 }
-
 
 .researcher-card a:hover {
     color: #003B7A;
@@ -502,7 +490,7 @@
 ====================================================== */
 
 .researcher-card a i {
-    font-size: 0.9rem;
+    font-size: .85rem;
 }
 
 
