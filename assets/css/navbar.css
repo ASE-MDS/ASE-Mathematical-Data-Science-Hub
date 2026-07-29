@@ -211,7 +211,7 @@
     }
    /* Logo MDS actif sur mobile */
 .navbar .logo.active {
-    color: #C62828;
+    color: #ffffff;
 }
 
 .navbar .logo.active::after {
@@ -322,7 +322,7 @@
     ----------------------------- */
 
     .navbar .nav-links a.active {
-        color: #C62828;
+        color: #ffffff;
     }
 
 
