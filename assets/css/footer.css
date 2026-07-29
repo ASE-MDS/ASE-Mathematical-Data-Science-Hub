@@ -1,154 +1,168 @@
-/* ======================================================
-   FOOTER
-====================================================== */
+/* ================= FOOTER ================= */
 
 footer {
+    background-color: #064581;
+    color: white;
     width: 100%;
-    background-color: #003B7A;
-    color: #ffffff;
-
-    padding: 35px 8%;
-
+    padding: 32px 3%;
     box-sizing: border-box;
 }
 
-
-/* ======================================================
-   FOOTER CONTAINER
-====================================================== */
-
 .footer-container {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1600px;
     margin: 0 auto;
 
     display: grid;
-
-    grid-template-columns:
-        1.4fr
-        1.5fr
-        1fr
-        0.9fr;
-
+    grid-template-columns: 1.2fr 1.6fr 1fr 1.1fr;
     align-items: center;
 }
 
-
-/* ======================================================
-   FOOTER COLUMNS
-====================================================== */
+/* ================= FOOTER COLUMNS ================= */
 
 .footer-column {
-    padding: 0 25px;
+    min-height: 75px;
+    padding: 0 32px;
+
+    display: flex;
+    align-items: center;
 }
 
+/* Separators */
 
-/* ======================================================
-   FOOTER SEPARATORS
-====================================================== */
-
-.footer-column:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, 0.25);
+.footer-column + .footer-column {
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
 }
 
+/* ================= CLUB ================= */
 
-/* ======================================================
-   FOOTER TEXT
-====================================================== */
-
-.footer-column p {
-    margin: 5px 0;
-
-    line-height: 1.5;
+.footer-column:first-child {
+    padding-left: 0;
 }
 
+.footer-column:first-child h4 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
 
-/* ======================================================
-   FOOTER LINKS
-====================================================== */
+.footer-column:first-child p {
+    margin: 0;
+    font-size: 18px;
+}
 
-.footer-column a {
-    color: #ffffff;
+/* ================= EMAIL ================= */
 
+.footer-column:nth-child(2) {
+    gap: 24px;
+}
+
+.footer-column:nth-child(2) > i {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.footer-column:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-column:nth-child(2) p {
+    margin: 0;
+}
+
+.footer-column:nth-child(2) a {
+    color: white;
     text-decoration: none;
-
-    white-space: nowrap;
-
-    transition: color 0.3s ease;
+    font-size: 18px;
 }
 
+/* ================= GITHUB ================= */
 
-.footer-column a:hover {
-    color: #C62828;
+.footer-column.github {
+    gap: 24px;
 }
 
-
-/* ======================================================
-   FOOTER ICONS
-====================================================== */
-
-.footer-column i {
-    color: #ffffff;
-
-    font-size: 28px;
+.footer-column.github i {
+    font-size: 34px;
+    flex-shrink: 0;
 }
 
+.footer-column.github a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
 
-/* ======================================================
-   FOOTER COPYRIGHT
-====================================================== */
+/* ================= COPYRIGHT ================= */
 
 .footer-column.copyright {
-    text-align: center;
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 0;
 }
 
+.footer-column.copyright p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.6;
+}
 
-/* ======================================================
-   MOBILE FOOTER
-====================================================== */
+/* ================= HOVER ================= */
 
-@media (max-width: 768px) {
+.footer-column a:hover {
+    color: #e02b2b;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .footer-column + .footer-column {
+        border-left: none;
+    }
+
+    .footer-column {
+        padding: 15px;
+    }
+
+    .footer-column.copyright {
+        justify-content: flex-start;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
 
     footer {
         padding: 30px 20px;
     }
 
-
     .footer-container {
         grid-template-columns: 1fr;
-
-        gap: 25px;
-
-        text-align: center;
     }
-
 
     .footer-column {
-        padding: 0 10px;
+        padding: 15px 0;
+        min-height: auto;
     }
 
-
-    /* Supprime les séparations verticales sur mobile */
-
-    .footer-column:not(:last-child) {
-        border-right: none;
-
-        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-
-        padding-bottom: 20px;
+    .footer-column:first-child {
+        padding-left: 0;
     }
-
-
-    /* Les emails restent sur une seule ligne si possible */
-
-    .footer-column a {
-        white-space: normal;
-
-        overflow-wrap: anywhere;
-    }
-
 
     .footer-column.copyright {
-        text-align: center;
+        padding-right: 0;
     }
 
+    .footer-column:nth-child(2),
+    .footer-column.github {
+        gap: 18px;
+    }
 }
