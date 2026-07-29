@@ -4,20 +4,140 @@
 
 
 /* ======================================================
-   CONTACT SUBNAVIGATION
+   CONTACT SECTIONS
 ====================================================== */
 
-.connect-subnav {
+.contact-section {
 
-    position: sticky;
+    padding: 90px 7%;
 
-    top: 75px;
+    background: #ffffff;
 
-    z-index: 900;
+    scroll-margin-top: 90px;
 
-    width: 100%;
+}
 
-    min-height: 60px;
+
+.contact-section.alt-section {
+
+    background: #F8FAFC;
+
+}
+
+
+/* ======================================================
+   SECTION HEADER
+====================================================== */
+
+.section-header {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+
+}
+
+
+.section-header span {
+
+    display: block;
+
+    color: #C62828;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+}
+
+
+.section-header h2 {
+
+    color: #003B7A;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 2.5rem;
+
+    font-weight: 700;
+
+    margin: 0;
+
+}
+
+
+.section-line {
+
+    width: 70px;
+
+    height: 4px;
+
+    background: #C62828;
+
+    margin: 18px auto 0;
+
+    border-radius: 30px;
+
+}
+
+
+/* ======================================================
+   FUNDRAISING / DONATION CARD
+====================================================== */
+
+.contact-card {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 45px;
+
+    background: #ffffff;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s ease;
+
+}
+
+
+.contact-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: #C62828;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* ======================================================
+   CONTACT ICON
+====================================================== */
+
+.contact-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    flex-shrink: 0;
 
     display: flex;
 
@@ -25,30 +145,82 @@
 
     align-items: center;
 
-    gap: 35px;
+    border-radius: 50%;
 
-    padding: 15px 5%;
+    background: #003B7A;
 
-    box-sizing: border-box;
+    color: #ffffff;
 
-    background-color: #ffffff;
+    font-size: 38px;
 
-    border-bottom: 1px solid #E5E7EB;
+    transition: 0.3s ease;
 
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+.contact-card:hover .contact-icon {
+
+    background: #C62828;
 
 }
 
 
 /* ======================================================
-   SUBNAV LINKS
+   CONTACT CONTENT
 ====================================================== */
 
-.connect-subnav a {
+.contact-content {
 
-    position: relative;
+    flex: 1;
+
+}
+
+
+.contact-content h3 {
 
     color: #003B7A;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contact-content p {
+
+    color: #555555;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+    max-width: 750px;
+
+}
+
+
+/* ======================================================
+   CONTACT BUTTON
+====================================================== */
+
+.contact-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 22px;
+
+    background: #003B7A;
+
+    color: #ffffff;
 
     text-decoration: none;
 
@@ -58,187 +230,29 @@
 
     font-weight: 600;
 
-    transition: color 0.3s ease;
+    border-radius: 7px;
 
-    white-space: nowrap;
+    transition: 0.3s ease;
+
+}
+
+
+.contact-btn:hover {
+
+    background: #C62828;
+
+    transform: translateX(4px);
 
 }
 
 
 /* ======================================================
-   SUBNAV HOVER
+   CONNECT
 ====================================================== */
 
-.connect-subnav a:hover {
-
-    color: #C62828;
-
-}
-
-
-/* ======================================================
-   ACTIVE SUBNAV LINK
-====================================================== */
-
-.connect-subnav a.active {
-
-    color: #C62828;
-
-}
-
-
-/* ======================================================
-   ACTIVE SUBNAV UNDERLINE
-====================================================== */
-
-.connect-subnav a.active::after {
-
-    content: "";
-
-    position: absolute;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    bottom: -8px;
-
-    width: 30px;
-
-    height: 3px;
-
-    background-color: #C62828;
-
-    border-radius: 10px;
-
-}
-
-
-/* ======================================================
-   CONTACT HERO
-====================================================== */
-
-.contact-hero {
-
-    position: relative;
-
-    min-height: 55vh;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    padding: 60px 5%;
-
-    box-sizing: border-box;
-
-    background:
-
-        linear-gradient(
-            rgba(0, 59, 122, 0.65),
-            rgba(0, 59, 122, 0.65)
-        ),
-
-        url("../images/hero/contact-hero.png")
-        center center / cover no-repeat;
-
-    text-align: center;
-
-}
-
-
-/* ======================================================
-   CONTACT HERO OVERLAY
-====================================================== */
-
-.contact-overlay {
-
-    position: absolute;
-
-    inset: 0;
-
-    background-color: rgba(0, 0, 0, 0.15);
-
-}
-
-
-/* ======================================================
-   CONTACT HERO CONTENT
-====================================================== */
-
-.contact-hero-content {
-
-    position: relative;
-
-    z-index: 2;
+.connect-content {
 
     max-width: 900px;
-
-    padding: 20px;
-
-    box-sizing: border-box;
-
-}
-
-
-.contact-hero-content h1 {
-
-    margin: 0 0 20px;
-
-    color: #ffffff;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
-
-    font-weight: 700;
-
-    line-height: 1.1;
-
-}
-
-
-.contact-hero-content p {
-
-    margin: 0;
-
-    color: #ffffff;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: clamp(1rem, 2vw, 1.3rem);
-
-    line-height: 1.6;
-
-}
-
-
-/* ======================================================
-   GENERAL CONTACT SECTIONS
-====================================================== */
-
-.connect-section,
-.fundraising-section,
-.donation-section {
-
-    width: 100%;
-
-    padding: 90px 5%;
-
-    box-sizing: border-box;
-
-}
-
-
-.connect-container,
-.fundraising-container,
-.donation-container {
-
-    width: 90%;
-
-    max-width: 1200px;
 
     margin: 0 auto;
 
@@ -247,486 +261,100 @@
 }
 
 
-/* ======================================================
-   SECTION TITLES
-====================================================== */
+.connect-content > p {
 
-.connect-section h2,
-.fundraising-section h2,
-.donation-section h2 {
-
-    margin: 0 0 25px;
-
-    color: #003B7A;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 2.2rem;
-
-    font-weight: 700;
-
-}
-
-
-/* ======================================================
-   RED TITLE UNDERLINE
-====================================================== */
-
-.connect-section h2::after,
-.fundraising-section h2::after,
-.donation-section h2::after {
-
-    content: "";
-
-    display: block;
-
-    width: 50px;
-
-    height: 3px;
-
-    margin: 15px auto 0;
-
-    background-color: #C62828;
-
-    border-radius: 10px;
-
-}
-
-
-/* ======================================================
-   CONNECT SECTION
-====================================================== */
-
-.connect-section {
-
-    background-color: #ffffff;
-
-}
-
-
-.connect-section p {
-
-    max-width: 750px;
+    max-width: 650px;
 
     margin: 0 auto 40px;
 
     color: #555555;
 
-    font-family: "Poppins", sans-serif;
+    font-size: 1.05rem;
 
-    font-size: 1rem;
-
-    line-height: 1.7;
+    line-height: 1.8;
 
 }
 
 
 /* ======================================================
-   CONNECT INFORMATION
+   SOCIAL LINKS
 ====================================================== */
 
-.connect-info {
+.social-links {
 
     display: flex;
 
     justify-content: center;
 
-    align-items: stretch;
+    align-items: center;
 
-    margin-top: 40px;
+    flex-wrap: wrap;
+
+    gap: 25px;
 
 }
 
 
-/* ======================================================
-   CONNECT CARD
-====================================================== */
+.social-card {
 
-.connect-card {
+    min-width: 170px;
 
-    width: 100%;
+    padding: 25px 30px;
 
-    max-width: 600px;
+    display: flex;
 
-    padding: 40px;
+    flex-direction: column;
 
-    box-sizing: border-box;
+    justify-content: center;
 
-    background-color: #ffffff;
+    align-items: center;
+
+    gap: 12px;
+
+    background: #ffffff;
 
     border: 1px solid #E5E7EB;
 
-    border-radius: 12px;
+    border-radius: 15px;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    color: #003B7A;
 
-    display: flex;
+    text-decoration: none;
 
-    flex-direction: column;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 
-    align-items: center;
-
-    text-align: center;
+    transition: 0.3s ease;
 
 }
 
 
-/* ======================================================
-   CONNECT ICON
-====================================================== */
+.social-card i {
 
-.connect-card > i {
-
-    margin-bottom: 20px;
-
-    color: #003B7A;
-
-    font-size: 40px;
+    font-size: 32px;
 
 }
 
 
-/* ======================================================
-   CONNECT CARD TITLE
-====================================================== */
-
-.connect-card h3 {
-
-    margin: 0 0 20px;
-
-    color: #003B7A;
+.social-card span {
 
     font-family: "Poppins", sans-serif;
 
-    font-size: 1.4rem;
+    font-size: 0.95rem;
 
     font-weight: 600;
 
 }
 
 
-/* ======================================================
-   CONNECT EMAIL LINKS
-====================================================== */
+.social-card:hover {
 
-.connect-card a {
-
-    display: block;
-
-    margin: 5px 0;
-
-    color: #003B7A;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 1rem;
-
-    text-decoration: none;
-
-    transition: color 0.3s ease;
-
-    word-break: break-word;
-
-}
-
-
-.connect-card a:hover {
+    transform: translateY(-7px);
 
     color: #C62828;
 
-}
+    border-color: #C62828;
 
-
-/* ======================================================
-   FUNDRAISING SECTION
-====================================================== */
-
-.fundraising-section {
-
-    background-color: #F7F9FC;
-
-}
-
-
-.fundraising-container p {
-
-    max-width: 800px;
-
-    margin: 0 auto 20px;
-
-    color: #555555;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 1rem;
-
-    line-height: 1.8;
-
-}
-
-
-/* ======================================================
-   DONATION SECTION
-====================================================== */
-
-.donation-section {
-
-    background-color: #ffffff;
-
-}
-
-
-.donation-container p {
-
-    max-width: 750px;
-
-    margin: 0 auto 35px;
-
-    color: #555555;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 1rem;
-
-    line-height: 1.8;
-
-}
-
-
-/* ======================================================
-   DONATION BUTTON
-====================================================== */
-
-.donation-button {
-
-    display: inline-flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    min-width: 180px;
-
-    padding: 14px 30px;
-
-    box-sizing: border-box;
-
-    background-color: #C62828;
-
-    color: #ffffff;
-
-    border: 2px solid #C62828;
-
-    border-radius: 6px;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 1rem;
-
-    font-weight: 600;
-
-    text-decoration: none;
-
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease,
-        transform 0.3s ease;
-
-}
-
-
-.donation-button:hover {
-
-    background-color: #ffffff;
-
-    color: #C62828;
-
-    transform: translateY(-2px);
-
-}
-
-
-/* ======================================================
-   FOOTER
-====================================================== */
-
-footer {
-
-    background-color: #064581;
-
-    color: #ffffff;
-
-    width: 100%;
-
-    padding: 22px 3%;
-
-    box-sizing: border-box;
-
-}
-
-
-.footer-container {
-
-    width: 90%;
-
-    max-width: 1800px;
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1.5fr 0.8fr;
-
-    align-items: center;
-
-}
-
-
-.footer-column {
-
-    min-height: 70px;
-
-    padding: 0 30px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    box-sizing: border-box;
-
-}
-
-
-/* ======================================================
-   FOOTER SEPARATORS
-====================================================== */
-
-.footer-column:nth-child(2),
-.footer-column:nth-child(3) {
-
-    border-left: 1px solid rgba(255, 255, 255, 0.35);
-
-}
-
-
-/* ======================================================
-   FIRST FOOTER BLOCK
-====================================================== */
-
-.footer-column:first-child {
-
-    padding-left: 20px;
-
-}
-
-
-.footer-column:first-child h4 {
-
-    margin: 0 0 6px;
-
-    font-size: 19px;
-
-    font-weight: 700;
-
-}
-
-
-.footer-column:first-child p {
-
-    margin: 0;
-
-    font-size: 16px;
-
-    line-height: 1.4;
-
-}
-
-
-/* ======================================================
-   FOOTER EMAIL
-====================================================== */
-
-.footer-email {
-
-    gap: 18px;
-
-}
-
-
-.footer-email > i {
-
-    flex-shrink: 0;
-
-    font-size: 30px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-}
-
-
-.footer-email > div {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 3px;
-
-    text-align: left;
-
-}
-
-
-.footer-email a {
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    font-size: 16px;
-
-    transition: color 0.3s ease;
-
-}
-
-
-.footer-email a:hover {
-
-    color: #D52B2B;
-
-}
-
-
-/* ======================================================
-   COPYRIGHT
-====================================================== */
-
-.footer-column.copyright {
-
-    justify-content: center;
-
-    text-align: center;
-
-    padding-right: 20px;
-
-}
-
-
-.footer-column.copyright p {
-
-    margin: 0;
-
-    font-size: 15px;
-
-    line-height: 1.5;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
 
 }
 
@@ -735,67 +363,19 @@ footer {
    TABLET
 ====================================================== */
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
 
+    .contact-section {
 
-    /* ================= SUBNAV ================= */
-
-    .connect-subnav {
-
-        top: 75px;
-
-        gap: 25px;
-
-        padding: 15px 4%;
+        padding: 80px 6%;
 
     }
 
+    .contact-card {
 
-    /* ================= HERO ================= */
+        padding: 35px;
 
-    .contact-hero {
-
-        min-height: 50vh;
-
-    }
-
-
-    /* ================= FOOTER ================= */
-
-    footer {
-
-        padding: 25px 5%;
-
-    }
-
-
-    .footer-container {
-
-        grid-template-columns: 1fr 1.5fr;
-
-        gap: 20px;
-
-    }
-
-
-    .footer-column:nth-child(3) {
-
-        grid-column: 1 / -1;
-
-        border-left: none;
-
-        border-top: 1px solid rgba(255, 255, 255, 0.35);
-
-        padding: 18px 0 0;
-
-    }
-
-
-    .footer-column.copyright {
-
-        justify-content: center;
-
-        text-align: center;
+        gap: 30px;
 
     }
 
@@ -809,286 +389,148 @@ footer {
 @media (max-width: 768px) {
 
 
-    /* ================= SUBNAV ================= */
+    /* =========================
+       SECTIONS
+    ========================= */
 
-    .connect-subnav {
+    .contact-section {
 
-        position: sticky;
+        padding: 65px 6%;
 
-        top: 65px;
-
-        min-height: auto;
-
-        gap: 0;
-
-        padding: 12px 10px;
-
-        overflow-x: auto;
-
-        justify-content: flex-start;
-
-        scrollbar-width: none;
+        scroll-margin-top: 90px;
 
     }
 
 
-    .connect-subnav::-webkit-scrollbar {
+    /* =========================
+       SECTION HEADER
+    ========================= */
 
-        display: none;
+    .section-header {
 
-    }
-
-
-    .connect-subnav a {
-
-        flex-shrink: 0;
-
-        font-size: 0.85rem;
-
-        padding: 5px 12px;
+        margin-bottom: 40px;
 
     }
 
 
-    .connect-subnav a.active::after {
+    .section-header h2 {
 
-        bottom: -5px;
+        font-size: 2rem;
 
-        width: 25px;
-
-        height: 2px;
+        line-height: 1.2;
 
     }
 
 
-    /* ================= HERO ================= */
+    /* =========================
+       CONTACT CARD
+    ========================= */
 
-    .contact-hero {
-
-        min-height: 45vh;
-
-        padding: 50px 25px;
-
-    }
-
-
-    .contact-hero-content {
-
-        padding: 10px;
-
-    }
-
-
-    .contact-hero-content h1 {
-
-        font-size: 2.2rem;
-
-    }
-
-
-    .contact-hero-content p {
-
-        font-size: 0.95rem;
-
-    }
-
-
-    /* ================= SECTIONS ================= */
-
-    .connect-section,
-    .fundraising-section,
-    .donation-section {
-
-        padding: 60px 25px;
-
-    }
-
-
-    .connect-container,
-    .fundraising-container,
-    .donation-container {
+    .contact-card {
 
         width: 100%;
 
-    }
+        padding: 35px 25px;
 
+        flex-direction: column;
 
-    .connect-section h2,
-    .fundraising-section h2,
-    .donation-section h2 {
+        text-align: center;
 
-        font-size: 1.8rem;
-
-    }
-
-
-    /* ================= CONNECT CARD ================= */
-
-    .connect-card {
-
-        padding: 30px 20px;
-
-    }
-
-
-    .connect-card a {
-
-        font-size: 0.9rem;
-
-    }
-
-
-    /* ================= FOOTER ================= */
-
-    footer {
-
-        padding: 15px 25px;
-
-    }
-
-
-    .footer-container {
-
-        width: 100%;
-
-        grid-template-columns: 1fr;
-
-        gap: 0;
-
-    }
-
-
-    .footer-column,
-    .footer-column:first-child,
-    .footer-column:nth-child(2),
-    .footer-column:nth-child(3) {
-
-        min-height: auto;
-
-        padding: 10px 0;
-
-        border-left: none;
-
-        border-top: none;
-
-        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        gap: 25px;
 
         box-sizing: border-box;
 
     }
 
 
-    /* ================= FIRST FOOTER BLOCK ================= */
+    /* =========================
+       CONTACT ICON
+    ========================= */
 
-    .footer-column:first-child {
+    .contact-icon {
 
-        padding-top: 0;
+        width: 75px;
 
-        padding-bottom: 10px;
+        height: 75px;
 
-    }
-
-
-    .footer-column:first-child h4 {
-
-        margin: 0 0 3px;
-
-        font-size: 17px;
-
-        line-height: 1.3;
+        font-size: 32px;
 
     }
 
 
-    .footer-column:first-child p {
+    /* =========================
+       CONTACT CONTENT
+    ========================= */
 
-        margin: 0;
-
-        font-size: 15px;
-
-        line-height: 1.3;
-
-    }
-
-
-    /* ================= EMAIL ================= */
-
-    .footer-email {
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        justify-content: center;
-
-        gap: 8px;
-
-        padding: 10px 0;
-
-    }
-
-
-    .footer-email > i {
-
-        font-size: 28px;
-
-        margin: 0;
-
-    }
-
-
-    .footer-email > div {
+    .contact-content {
 
         width: 100%;
 
-        display: flex;
+    }
 
-        flex-direction: column;
 
-        gap: 2px;
+    .contact-content h3 {
 
-        text-align: left;
+        font-size: 1.35rem;
 
     }
 
 
-    .footer-email a {
+    .contact-content p {
 
-        font-size: 15px;
+        font-size: 0.95rem;
 
-        line-height: 1.3;
+        line-height: 1.7;
 
     }
 
 
-    /* ================= COPYRIGHT ================= */
+    /* =========================
+       CONTACT BUTTON
+    ========================= */
 
-    .footer-column.copyright {
-
-        padding-top: 10px;
-
-        padding-bottom: 0;
+    .contact-btn {
 
         justify-content: center;
 
-        text-align: center;
-
-        border-top: none;
-
-        border-bottom: none;
+        padding: 12px 20px;
 
     }
 
 
-    .footer-column.copyright p {
+    /* =========================
+       CONNECT
+    ========================= */
 
-        margin: 0;
+    .connect-content > p {
 
-        font-size: 15px;
+        font-size: 0.95rem;
 
-        line-height: 1.3;
+        line-height: 1.7;
+
+    }
+
+
+    /* =========================
+       SOCIAL LINKS
+    ========================= */
+
+    .social-links {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .social-card {
+
+        width: 100%;
+
+        max-width: 320px;
+
+        box-sizing: border-box;
 
     }
 
