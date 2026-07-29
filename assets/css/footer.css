@@ -4,142 +4,177 @@ footer {
     background-color: #064581;
     color: white;
     width: 100%;
-    padding: 38px 3.5%;
+    padding: 22px 3%;
     box-sizing: border-box;
 }
 
-/* Conteneur principal */
+
+/* ================= FOOTER CONTAINER ================= */
+
 .footer-container {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 1.25fr 1.6fr 1.1fr 1fr;
+    grid-template-columns: 1.2fr 1.8fr 1fr;
+
     align-items: center;
 }
 
-/* ================= BLOCS ================= */
+
+/* ================= FOOTER COLUMNS ================= */
 
 .footer-column {
-    min-height: 96px;
-    padding: 0 32px;
+    min-height: 70px;
+
+    padding: 0 30px;
 
     display: flex;
     align-items: center;
 
+    box-sizing: border-box;
+}
+
+
+/* ================= SEPARATORS ================= */
+
+.footer-column:nth-child(2),
+.footer-column:nth-child(3) {
     border-left: 1px solid rgba(255, 255, 255, 0.35);
 }
 
-/* Premier bloc */
+
+/* ================= FIRST BLOCK ================= */
+
 .footer-column:first-child {
-    border-left: none;
     padding-left: 0;
 }
 
-/* Dernier bloc */
-.footer-column:last-child {
-    padding-right: 0;
-}
+.footer-column:first-child h4 {
+    margin: 0 0 6px;
 
-/* ================= TEXTE ================= */
-
-.footer-column h4 {
-    margin: 0 0 14px;
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 700;
 }
 
-.footer-column p {
+.footer-column:first-child p {
     margin: 0;
-    font-size: 18px;
-    line-height: 1.7;
+
+    font-size: 16px;
+    line-height: 1.4;
 }
 
-.footer-column a {
-    color: white;
-    text-decoration: none;
-}
 
-.footer-column a:hover {
-    color: #d52b2b;
-}
-
-/* ================= EMAIL ================= */
+/* ================= EMAIL BLOCK ================= */
 
 .footer-column:nth-child(2) {
-    gap: 24px;
+    gap: 20px;
 }
 
 .footer-column:nth-child(2) > i {
-    font-size: 32px;
     flex-shrink: 0;
+
+    font-size: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-column:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
 .footer-column:nth-child(2) p {
-    line-height: 1.8;
+    margin: 0;
+    line-height: 1.4;
 }
 
-/* ================= GITHUB ================= */
+.footer-column:nth-child(2) a {
+    color: white;
 
-.footer-column.github {
-    gap: 24px;
+    text-decoration: none;
+
+    font-size: 16px;
 }
 
-.footer-column.github > i {
-    font-size: 34px;
-    flex-shrink: 0;
+.footer-column:nth-child(2) a:hover {
+    color: #d52b2b;
 }
+
 
 /* ================= COPYRIGHT ================= */
 
 .footer-column.copyright {
     justify-content: center;
     text-align: center;
+
+    padding-right: 0;
 }
 
-/* ================= RESPONSIVE ================= */
+.footer-column.copyright p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* ================= TABLET ================= */
 
 @media (max-width: 1000px) {
 
     footer {
-        padding: 35px 5%;
+        padding: 25px 5%;
     }
 
     .footer-container {
-        grid-template-columns: 1fr 1fr;
-        row-gap: 25px;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 20px;
     }
 
     .footer-column:nth-child(3) {
+        grid-column: 1 / -1;
+
         border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.35);
+
+        padding: 18px 0 0;
     }
 
-    .footer-column {
-        min-height: 80px;
+    .footer-column.copyright {
+        justify-content: flex-start;
+        text-align: left;
     }
 }
 
 
+/* ================= MOBILE ================= */
+
 @media (max-width: 650px) {
 
     footer {
-        padding: 35px 25px;
+        padding: 20px 25px;
     }
 
     .footer-container {
         grid-template-columns: 1fr;
-        gap: 20px;
     }
 
     .footer-column,
     .footer-column:first-child,
-    .footer-column:last-child {
+    .footer-column:nth-child(2),
+    .footer-column:nth-child(3) {
+
+        padding: 15px 0;
+
+        min-height: auto;
+
         border-left: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-
-        padding: 20px 0;
-        min-height: auto;
     }
 
     .footer-column:last-child {
