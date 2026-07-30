@@ -625,10 +625,7 @@
 
 .founding-member-card {
 
-    max-width: 300px;          /* largeur réduite */
-    margin: 0 auto;
-
-    padding: 25px 22px;        /* moins d'espace intérieur */
+    padding: 35px 30px;
 
     background: #ffffff;
 
@@ -638,17 +635,9 @@
 
     text-align: center;
 
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 
     transition: 0.3s ease;
-
-}
-
-.founding-member-card:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.10);
 
 }
 
