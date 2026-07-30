@@ -3,80 +3,72 @@
 ====================================================== */
 
 
-/* ================= ABOUT HERO ================= */
+.about-hero{
 
-.about-hero {
+    position:relative;
 
-    height: 55vh;
+    height:55vh;
 
-    background: url("../images/hero/about-hero.png")
+    display:flex;
 
-        center center / cover no-repeat;
+    justify-content:center;
 
-    position: relative;
+    align-items:center;
 
-    display: flex;
+    overflow:hidden;
 
-    justify-content: center;
+}
 
-    align-items: center;
 
-    text-align: center;
+/* ================= IMAGE ================= */
 
-    margin-top: 0;
+.about-hero img{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    object-position:center;
 
 }
 
 
 /* ================= OVERLAY ================= */
 
-.about-overlay {
-    position: absolute;
+.about-overlay{
 
-    inset: 0;
+    position:absolute;
 
-    background: rgba(0, 0, 0, 0.45);
+    inset:0;
 
-    z-index: 1;
+    background:rgba(0,0,0,.45);
+
 }
 
 
-/* ================= HERO CONTENT ================= */
+/* ================= CONTENT ================= */
 
-.about-hero-content {
-    position: relative;
+.about-hero-content{
 
-    z-index: 2;
+    position:relative;
 
-    max-width: 900px;
+    z-index:2;
 
-    padding: 20px;
+    text-align:center;
+
+    color:#ffffff;
+
+    max-width:850px;
+
+    padding:0 20px;
+
 }
-
-
-.about-hero-content h1 {
-    color: #ffffff;
-
-    font-size: 4rem;
-
-    font-weight: 700;
-
-    margin: 0 0 25px;
-}
-
-
-.about-hero-content p {
-    color: #ffffff;
-
-    font-size: 1.2rem;
-
-    line-height: 1.6;
-
-    margin: 0 auto;
-
-    max-width: 750px;
-}
-
 
 /* ================= MOBILE ================= */
 
