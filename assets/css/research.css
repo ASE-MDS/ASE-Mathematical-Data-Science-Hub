@@ -540,7 +540,7 @@
 
 .publications-grid {
 
-    max-width: 1000px;
+    max-width: 850px;
 
     margin: 0 auto;
 
@@ -548,7 +548,7 @@
 
     grid-template-columns: repeat(2, 1fr);
 
-    gap: 30px;
+    gap: 22px;
 
 }
 
@@ -557,7 +557,7 @@
 
 .publication-card {
 
-    padding: 35px;
+    padding: 24px 22px;
 
     background: #ffffff;
 
@@ -587,9 +587,9 @@
 
     color: #003B7A;
 
-    font-size: 40px;
+    font-size: 34px;
 
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 
 }
 
@@ -602,11 +602,11 @@
 
     font-family: "Poppins", sans-serif;
 
-    font-size: 1.15rem;
+    font-size: 1.05rem;
 
-    line-height: 1.5;
+    line-height: 1.4;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
 }
 
@@ -617,9 +617,9 @@
 
     color: #666666;
 
-    font-size: 0.9rem;
+    font-size: 0.88rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 
 }
 
@@ -632,7 +632,7 @@
 
     align-items: center;
 
-    gap: 8px;
+    gap: 6px;
 
     color: #0F766E;
 
@@ -650,7 +650,6 @@
     color: #003B7A;
 
 }
-
 
 /* ======================================================
    OPEN DATA
@@ -789,7 +788,7 @@
 
 .open-data-grid{
 
-    max-width:1100px;
+    max-width:1000px;
 
     margin:0 auto;
 
@@ -797,7 +796,7 @@
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:30px;
+    gap:22px;
 
 }
 
@@ -808,7 +807,7 @@
 
 .data-card{
 
-    padding:35px 30px;
+    padding:25px 20px;
 
     background:#ffffff;
 
@@ -827,11 +826,11 @@
 
 .data-card:hover{
 
-    transform:translateY(-7px);
+    transform:translateY(-5px);
 
     border-color:#003B7A;
 
-    box-shadow:0 15px 30px rgba(0,0,0,.10);
+    box-shadow:0 12px 24px rgba(0,0,0,.10);
 
 }
 
@@ -844,9 +843,9 @@
 
     color:#003B7A;
 
-    font-size:42px;
+    font-size:34px;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
 }
 
@@ -861,9 +860,9 @@
 
     font-family:"Poppins",sans-serif;
 
-    font-size:1.15rem;
+    font-size:1.05rem;
 
-    margin-bottom:12px;
+    margin-bottom:10px;
 
 }
 
@@ -876,11 +875,11 @@
 
     color:#555555;
 
-    font-size:.95rem;
+    font-size:.90rem;
 
-    line-height:1.7;
+    line-height:1.5;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
 }
 
@@ -895,11 +894,13 @@
 
     align-items:center;
 
-    gap:8px;
+    gap:6px;
 
     color:#0F766E;
 
     font-weight:600;
+
+    font-size:.95rem;
 
     text-decoration:none;
 
