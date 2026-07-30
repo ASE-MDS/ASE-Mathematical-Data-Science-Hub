@@ -625,7 +625,10 @@
 
 .founding-member-card {
 
-    padding: 35px 30px;
+    max-width: 300px;          /* largeur réduite */
+    margin: 0 auto;
+
+    padding: 25px 22px;        /* moins d'espace intérieur */
 
     background: #ffffff;
 
@@ -635,23 +638,19 @@
 
     text-align: center;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 
     transition: 0.3s ease;
 
 }
 
-
 .founding-member-card:hover {
 
-    transform: translateY(-7px);
+    transform: translateY(-5px);
 
-    border-color: #003B7A;
-
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.10);
 
 }
-
 
 /* ======================================================
    FOUNDING MEMBER PHOTO
@@ -659,9 +658,9 @@
 
 .founding-member-card img {
 
-    width: 130px;
+    width: 150px;
 
-    height: 130px;
+    height: 150px;
 
     margin: 0 auto 20px;
 
