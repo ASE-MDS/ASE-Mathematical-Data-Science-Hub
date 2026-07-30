@@ -670,15 +670,15 @@
 
 .open-data-tabs{
 
-    max-width:1200px;
+    max-width:1000px;
 
-    margin:0 auto 50px;
+    margin:0 auto 40px;
 
     display:grid;
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:30px;
+    gap:18px;
 
 }
 
@@ -695,11 +695,13 @@
 
     align-items:center;
 
-    padding:22px;
+    padding:14px 18px;
+
+    min-height:56px;
 
     border:2px solid #003B7A;
 
-    border-radius:14px;
+    border-radius:10px;
 
     background:#ffffff;
 
@@ -707,7 +709,7 @@
 
     font-family:"Poppins",sans-serif;
 
-    font-size:1.05rem;
+    font-size:0.95rem;
 
     font-weight:600;
 
@@ -723,6 +725,8 @@
     background:#003B7A;
 
     color:#ffffff;
+
+    transform:translateY(-2px);
 
 }
 
@@ -740,7 +744,6 @@
     color:#ffffff;
 
 }
-
 
 /* ======================================================
    CONTENT
