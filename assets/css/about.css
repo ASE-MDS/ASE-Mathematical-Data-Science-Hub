@@ -1045,9 +1045,15 @@
 
 .resource-list {
 
+    max-width: 1250px;
+
+    margin: 0 auto;
+
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 360px);
+
+    justify-content: center;
 
     gap: 16px;
 
@@ -1064,9 +1070,11 @@
 
     gap: 12px;
 
-    padding: 14px 18px;      /* réduit */
+    width: 360px;
 
-    min-height: 52px;        /* hauteur plus petite */
+    padding: 14px 18px;
+
+    min-height: 52px;
 
     background: #ffffff;
 
@@ -1076,7 +1084,7 @@
 
     color: #003B7A;
 
-    font-size: 0.95rem;      /* texte légèrement plus petit */
+    font-size: 0.95rem;
 
     font-weight: 600;
 
@@ -1089,7 +1097,7 @@
 
 .resource-list a i{
 
-    font-size: 1.15rem;      /* icône plus petite */
+    font-size: 1.15rem;
 
 }
 
@@ -1103,7 +1111,6 @@
     transform: translateY(-2px);
 
 }
-
 
 /* ======================================================
    ANIMATION
