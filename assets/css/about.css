@@ -142,7 +142,7 @@
 
 .page-navigation a:hover{
 
-    color:#C62828;
+    color:#0F766E;
 
 }
 
@@ -252,7 +252,7 @@
 
     display:inline-block;
 
-    color:#C62828;
+    color:#0F766E;
 
     font-size:.95rem;
 
@@ -282,7 +282,7 @@
 
     height:4px;
 
-    background:#C62828;
+    background:#0F766E;
 
     margin:20px auto;
 
@@ -345,7 +345,7 @@
 
 .leader-content h4{
 
-    color:#C62828;
+    color:#0F766E;
 
     margin:8px 0 30px;
 
@@ -421,7 +421,7 @@
 
 .leader-contact i{
 
-    color:#C62828;
+    color:#0F766E;
 
     font-size:1.2rem;
 
@@ -441,7 +441,7 @@
 
 .leader-contact a:hover{
 
-    color:#C62828;
+    color:#0F766E;
 
 }
 
@@ -515,7 +515,7 @@
 
     border-radius:18px;
 
-    border-top:5px solid #C62828;
+    border-top:5px solid #0F766E;
 
     box-shadow:0 10px 30px rgba(0,0,0,.07);
 
@@ -535,7 +535,7 @@
 
     font-size:2.7rem;
 
-    color:#C62828;
+    color:#0F766E;
 
     margin-bottom:22px;
 
@@ -707,7 +707,7 @@
 
     gap: 8px;
 
-    color: #C62828;
+    color: #0F766E;
 
     font-weight: 600;
 
@@ -877,7 +877,7 @@
 
     transform: translateY(-7px);
 
-    border-color: #C62828;
+    border-color: #0F766E;
 
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
 
@@ -937,7 +937,7 @@
 #datasets-tab:checked ~ .resource-categories label[for="datasets-tab"],
 #github-tab:checked ~ .resource-categories label[for="github-tab"] {
 
-    border-color: #C62828;
+    border-color: #0F766E;
 
 }
 
@@ -947,7 +947,7 @@
 #datasets-tab:checked ~ .resource-categories label[for="datasets-tab"] .resource-icon,
 #github-tab:checked ~ .resource-categories label[for="github-tab"] .resource-icon {
 
-    color: #C62828;
+    color: #0F766E;
 
 }
 
@@ -957,7 +957,7 @@
 #datasets-tab:checked ~ .resource-categories label[for="datasets-tab"] h3,
 #github-tab:checked ~ .resource-categories label[for="github-tab"] h3 {
 
-    color: #C62828;
+    color: #0F766E;
 
 }
 
@@ -1068,9 +1068,9 @@
 
 .resource-list a:hover {
 
-    border-color: #C62828;
+    border-color: #0F766E;
 
-    color: #C62828;
+    color: #0F766E;
 
     transform: translateY(-3px);
 
@@ -1184,7 +1184,7 @@
 
     display: block;
 
-    color: #C62828;
+    color: #0F766E;
 
     font-size: 1.1rem;
 
@@ -1218,7 +1218,7 @@
 
     margin: 35px auto 0;
 
-    background: #C62828;
+    background: #0F766E;
 
     border-radius: 10px;
 
@@ -1403,7 +1403,7 @@
 
 .event-toggle:checked ~ .event-category-card {
 
-    border-color: #C62828;
+    border-color: #0F766E;
 
 }
 
@@ -1412,7 +1412,7 @@
 
 .event-toggle:checked ~ .event-category-card h3 {
 
-    color: #C62828;
+    color: #0F766E;
 
 }
 
@@ -1421,7 +1421,7 @@
 
 .event-toggle:checked ~ .event-category-card .event-arrow {
 
-    background: #C62828;
+    background: #0F766E;
 
     transform: rotate(45deg);
 
@@ -1490,7 +1490,7 @@
 
 .event-date.past {
 
-    color: #C62828;
+    color: #0F766E;
 
 }
 
@@ -1877,7 +1877,7 @@
 
     background:#C62828;
 
-    border-color:#C62828;
+    border-color:#0F766E;
 
     color:#ffffff;
 
