@@ -349,30 +349,30 @@
    CONNECT
 ====================================================== */
 
-.connect-content {
+.connect-content{
 
-    max-width: 900px;
+    max-width:1100px;
 
-    margin: 0 auto;
+    margin:0 auto;
 
-    text-align: center;
+    text-align:center;
 
 }
 
 
-.connect-content > p {
+.connect-content>p{
 
-    max-width: 650px;
+    max-width:700px;
 
-    margin: 0 auto 40px;
+    margin:0 auto 45px;
 
-    color: #555555;
+    color:#555555;
 
-    font-family: "Poppins", sans-serif;
+    font-family:"Poppins",sans-serif;
 
-    font-size: 1.05rem;
+    font-size:1.05rem;
 
-    line-height: 1.8;
+    line-height:1.8;
 
 }
 
@@ -381,85 +381,398 @@
    SOCIAL LINKS
 ====================================================== */
 
-.social-links {
+.social-links{
 
-    display: flex;
+    display:flex;
 
-    justify-content: center;
+    justify-content:center;
 
-    align-items: center;
+    align-items:stretch;
 
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 
-    gap: 25px;
+    gap:25px;
 
-}
-
-
-.social-card {
-
-    min-width: 170px;
-
-    padding: 25px 30px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 12px;
-
-    background: #ffffff;
-
-    border: 1px solid #E5E7EB;
-
-    border-radius: 15px;
-
-    color: #003B7A;
-
-    text-decoration: none;
-
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-
-    transition: 0.3s ease;
+    margin-bottom:35px;
 
 }
 
 
-.social-card i {
+/* ======================================================
+   SOCIAL CARD
+====================================================== */
 
-    font-size: 32px;
+.social-card{
+
+    min-width:190px;
+
+    padding:28px 30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:#ffffff;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:15px;
+
+    color:#003B7A;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+    transition:.3s;
 
 }
 
 
-.social-card span {
+.social-card i{
 
-    font-family: "Poppins", sans-serif;
-
-    font-size: 0.95rem;
-
-    font-weight: 600;
+    font-size:34px;
 
 }
 
 
-.social-card:hover {
+.social-card span{
 
-    transform: translateY(-7px);
+    font-family:"Poppins",sans-serif;
 
-    color: #C62828;
+    font-size:1rem;
 
-    border-color: #C62828;
-
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
+    font-weight:600;
 
 }
 
 
+.social-card:hover{
+
+    transform:translateY(-7px);
+
+    border-color:#C62828;
+
+    color:#C62828;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.10);
+
+}
+
+
+/* ======================================================
+   HIDDEN CHECKBOX
+====================================================== */
+
+.collaboration-toggle{
+
+    display:none;
+
+}
+
+
+/* ======================================================
+   COLLABORATION PANEL
+====================================================== */
+
+.collaboration-panel{
+
+    max-height:0;
+
+    opacity:0;
+
+    overflow:hidden;
+
+    margin-top:0;
+
+    transition:
+        max-height .6s ease,
+        opacity .4s ease,
+        margin .4s ease;
+
+}
+
+
+/* ======================================================
+   OPEN PANEL
+====================================================== */
+
+.collaboration-toggle:checked + .collaboration-panel{
+
+    max-height:1600px;
+
+    opacity:1;
+
+    margin-top:40px;
+
+}
+
+
+/* ======================================================
+   PANEL DESIGN
+====================================================== */
+
+.collaboration-panel{
+
+    background:#F8FAFC;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    padding:50px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+}
+
+
+.collaboration-panel h3{
+
+    color:#003B7A;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:2rem;
+
+    margin:0 0 20px;
+
+}
+
+
+.collaboration-panel>p{
+
+    max-width:850px;
+
+    margin:0 auto 45px;
+
+    color:#555555;
+
+    line-height:1.8;
+
+}
+
+
+/* ======================================================
+   COLLABORATION GRID
+====================================================== */
+
+.collaboration-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:45px;
+
+}
+
+
+.collaboration-box{
+
+    background:#ffffff;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:14px;
+
+    padding:30px;
+
+    transition:.3s;
+
+}
+
+
+.collaboration-box:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#C62828;
+
+}
+
+
+.collaboration-box i{
+
+    font-size:34px;
+
+    color:#003B7A;
+
+    margin-bottom:18px;
+
+}
+
+
+.collaboration-box h4{
+
+    color:#003B7A;
+
+    margin:0;
+
+    font-size:1.05rem;
+
+}
+
+
+/* ======================================================
+   WHO CAN COLLABORATE
+====================================================== */
+
+.collaboration-info{
+
+    text-align:left;
+
+    margin:40px 0;
+
+}
+
+
+.collaboration-info h4{
+
+    color:#003B7A;
+
+    margin-bottom:20px;
+
+}
+
+
+.collaboration-info ul{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px 35px;
+
+    padding-left:20px;
+
+}
+
+
+.collaboration-info li{
+
+    color:#555555;
+
+    line-height:1.7;
+
+}
+
+
+/* ======================================================
+   BUTTON
+====================================================== */
+
+.collaboration-panel .contact-btn{
+
+    margin:15px auto 0;
+
+    display:inline-flex;
+
+}
+
+
+/* ======================================================
+   TABLET
+====================================================== */
+
+@media(max-width:992px){
+
+    .social-links{
+
+        gap:18px;
+
+    }
+
+    .social-card{
+
+        min-width:170px;
+
+    }
+
+    .collaboration-panel{
+
+        padding:40px;
+
+    }
+
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media(max-width:768px){
+
+    .connect-content>p{
+
+        font-size:.95rem;
+
+    }
+
+    .social-links{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+
+    }
+
+    .social-card{
+
+        width:100%;
+
+        max-width:330px;
+
+        box-sizing:border-box;
+
+    }
+
+    .collaboration-panel{
+
+        padding:30px 20px;
+
+    }
+
+    .collaboration-panel h3{
+
+        font-size:1.55rem;
+
+        line-height:1.3;
+
+    }
+
+    .collaboration-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .collaboration-info{
+
+        text-align:left;
+
+    }
+
+    .collaboration-info ul{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
 /* ======================================================
    TABLET
 ====================================================== */
