@@ -71,7 +71,7 @@
 
 .connect-subnav a:hover {
 
-    color: #C62828;
+    color: #0F766E;
 
 }
 
@@ -114,7 +114,7 @@
 
 .connect-subnav a:hover {
 
-    color: #C62828;
+    color: #0F766E;
 
 }
 
@@ -135,7 +135,7 @@
 
     display: block;
 
-    color: #C62828;
+    color: #0F766E;
 
     font-family: "Poppins", sans-serif;
 
@@ -169,7 +169,7 @@
 
     height: 4px;
 
-    background: #C62828;
+    background: #0F766E;
 
     margin: 18px auto 0;
 
@@ -213,7 +213,7 @@
 
     transform: translateY(-6px);
 
-    border-color: #C62828;
+    border-color: #0F766E;
 
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
 
@@ -253,7 +253,7 @@
 
 .contact-card:hover .contact-icon {
 
-    background: #C62828;
+    background: #0F766E;
 
 }
 
@@ -338,7 +338,7 @@
 
 .contact-btn:hover {
 
-    background: #C62828;
+    background: #0F766E;
 
     transform: translateX(4px);
 
@@ -459,9 +459,9 @@
 
     transform:translateY(-7px);
 
-    border-color:#C62828;
+    border-color:#0F766E;
 
-    color:#C62828;
+    color:#0F766E;
 
     box-shadow:0 15px 30px rgba(0,0,0,.10);
 
