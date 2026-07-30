@@ -653,30 +653,133 @@
 
 
 /* ======================================================
+   OPEN DATA
+====================================================== */
+
+/* Cache les radios */
+
+#dataset-tab,
+#collection-tab,
+#indicator-tab{
+    display:none;
+}
+
+
+/* ======================================================
    OPEN DATA TABS
 ====================================================== */
 
-.open-data-content{
-    display:none;
-    margin-top:45px;
+.open-data-tabs{
+
+    max-width:1200px;
+
+    margin:0 auto 50px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
 }
+
+
+/* ======================================================
+   TAB BUTTON
+====================================================== */
+
+.open-data-tab{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:22px;
+
+    border:2px solid #003B7A;
+
+    border-radius:14px;
+
+    background:#ffffff;
+
+    color:#003B7A;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:1.05rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+
+.open-data-tab:hover{
+
+    background:#003B7A;
+
+    color:#ffffff;
+
+}
+
+
+/* ======================================================
+   ACTIVE TAB
+====================================================== */
+
+#dataset-tab:checked ~ .open-data-tabs label[for="dataset-tab"],
+#collection-tab:checked ~ .open-data-tabs label[for="collection-tab"],
+#indicator-tab:checked ~ .open-data-tabs label[for="indicator-tab"]{
+
+    background:#003B7A;
+
+    color:#ffffff;
+
+}
+
+
+/* ======================================================
+   CONTENT
+====================================================== */
+
+.open-data-content{
+
+    display:none;
+
+    margin-top:45px;
+
+}
+
 
 /* Dataset */
 
 #dataset-tab:checked ~ .dataset-content{
+
     display:block;
+
 }
+
 
 /* Collection */
 
 #collection-tab:checked ~ .collection-content{
+
     display:block;
+
 }
+
 
 /* Indicators */
 
 #indicator-tab:checked ~ .indicator-content{
+
     display:block;
+
 }
 
 
@@ -721,11 +824,14 @@
 
 }
 
+
 .data-card:hover{
 
     transform:translateY(-7px);
 
     border-color:#003B7A;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.10);
 
 }
 
@@ -801,6 +907,7 @@
 
 }
 
+
 .data-card a:hover{
 
     color:#003B7A;
@@ -841,7 +948,7 @@
 
     gap:30px;
 
-    padding:22px 28px;
+    padding:24px 28px;
 
     background:#ffffff;
 
@@ -854,6 +961,7 @@
     transition:.3s ease;
 
 }
+
 
 .collection-item:hover{
 
@@ -893,7 +1001,7 @@
 
     padding:7px 14px;
 
-    border-radius:7px;
+    border-radius:8px;
 
     font-size:.8rem;
 
@@ -950,13 +1058,14 @@
 
 }
 
+
 .collection-right span{
 
-    padding:7px 12px;
+    padding:8px 13px;
 
-    border-radius:7px;
+    border-radius:8px;
 
-    background:#F3F6FA;
+    background:#F5F7FA;
 
     border:1px solid #E5E7EB;
 
@@ -993,6 +1102,7 @@
 
 }
 
+
 .coming-soon i{
 
     font-size:55px;
@@ -1003,6 +1113,7 @@
 
 }
 
+
 .coming-soon h3{
 
     color:#003B7A;
@@ -1010,6 +1121,7 @@
     margin-bottom:15px;
 
 }
+
 
 .coming-soon p{
 
@@ -1019,6 +1131,65 @@
 
 }
 
+
+/* ======================================================
+   TABLET
+====================================================== */
+
+@media (max-width:992px){
+
+    .open-data-tabs{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+    .open-data-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width:768px){
+
+    .open-data-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .collection-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:18px;
+
+    }
+
+    .collection-left{
+
+        flex-direction:column;
+
+    }
+
+    .collection-right{
+
+        width:100%;
+
+    }
+
+}
 
 /* ======================================================
    TABLET
