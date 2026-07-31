@@ -1820,7 +1820,7 @@
 
     width:100%;
 
-    max-width:1200px;
+    max-width:1400px;
 
     margin:50px auto 0;
 
@@ -1941,7 +1941,7 @@
 
     align-items:center;
 
-    gap:30px;
+    gap:24px;
 
     flex-wrap:nowrap;
 
@@ -1950,9 +1950,11 @@
 
 .partner-logo{
 
-    flex:1;
+    width:260px;
 
-    min-height:150px;
+    height:150px;
+
+    flex:0 0 260px;
 
     padding:25px;
 
