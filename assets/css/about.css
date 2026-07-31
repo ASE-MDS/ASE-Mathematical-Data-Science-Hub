@@ -2103,38 +2103,52 @@
    TABLET
 ====================================================== */
 
-@media(max-width:992px){
+@media (max-width: 992px){
 
     .leader-container,
     .mission-grid{
-
-        grid-template-columns:1fr;
-
+        grid-template-columns: 1fr;
     }
-
 
     .page-navigation{
-
-        flex-wrap:wrap;
-
-        gap:18px;
-
+        flex-wrap: wrap;
+        gap: 18px;
     }
 
-  /* ======================================================
+}
+
+
+/* ======================================================
    MOBILE - PARTNER CATEGORIES
 ====================================================== */
 
 @media (max-width: 768px){
 
+    /* Catégories */
     .partner-categories{
-
         display: grid;
-
-        grid-template-columns: repeat(2, 1fr);
-
+        grid-template-columns: 1fr;
         gap: 14px;
+        max-width: 320px;
+        margin: 0 auto 30px;
+    }
 
+    .partner-btn{
+        width: 100%;
+        min-height: 52px;
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+
+    /* Logos */
+    .partner-logo-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .partner-logo{
+        min-height: 110px;
+        padding: 18px;
     }
 
 }
@@ -2478,43 +2492,3 @@
         gap:25px;
 
     }
-
-
-    /* =========================
-       EVENTS
-    ========================= */
-
-    .timeline{
-
-        padding-left:25px;
-
-    }
-
-
-    .timeline::before{
-
-        left:6px;
-
-    }
-
-
-    .timeline-item::before{
-
-        left:-25px;
-
-    }
-
-
-    @media (max-width: 768px){
-
-    .partner-categories{
-
-        display: grid;
-
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 14px;
-
-    }
-
-}
