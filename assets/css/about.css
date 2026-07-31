@@ -1842,7 +1842,7 @@
 
     width:100%;
 
-    max-width:1050px;
+    max-width:1200px;
 
     margin:0 auto 45px;
 
@@ -1902,6 +1902,7 @@
 
 }
 
+
 /* ======================================================
    PARTNER GROUPS
 ====================================================== */
@@ -1930,18 +1931,26 @@
 }
 
 
+/* ===== Logos sur une seule ligne sur PC ===== */
+
 .partner-logo-grid{
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:repeat(4,1fr);
+    justify-content:center;
+
+    align-items:center;
 
     gap:30px;
+
+    flex-wrap:nowrap;
 
 }
 
 
 .partner-logo{
+
+    flex:1;
 
     min-height:150px;
 
@@ -2103,56 +2112,74 @@
    TABLET
 ====================================================== */
 
-@media (max-width: 992px){
+@media (max-width:992px){
 
     .leader-container,
     .mission-grid{
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
     }
 
     .page-navigation{
-        flex-wrap: wrap;
-        gap: 18px;
+        flex-wrap:wrap;
+        gap:18px;
     }
 
 }
 
 
 /* ======================================================
-   MOBILE - PARTNER CATEGORIES
+   MOBILE
 ====================================================== */
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
     /* Catégories */
+
     .partner-categories{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 14px;
-        max-width: 320px;
-        margin: 0 auto 30px;
+
+        grid-template-columns:1fr;
+
+        max-width:320px;
+
+        gap:14px;
+
+        margin:0 auto 30px;
+
     }
 
     .partner-btn{
-        width: 100%;
-        min-height: 52px;
-        padding: 12px 16px;
-        font-size: 0.95rem;
+
+        width:100%;
+
+        min-height:52px;
+
+        padding:12px 16px;
+
     }
 
     /* Logos */
+
     .partner-logo-grid{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:18px;
+
     }
 
     .partner-logo{
-        min-height: 110px;
-        padding: 18px;
+
+        width:100%;
+
+        min-height:110px;
+
+        padding:18px;
+
     }
 
 }
-
 
     /* =========================
        FOUNDING MEMBERS
