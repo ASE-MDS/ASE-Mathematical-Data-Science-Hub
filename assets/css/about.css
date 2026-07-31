@@ -1,21 +1,20 @@
 /* ======================================================
-   ABOUT PAGE
+   ABOUT HERO
 ====================================================== */
-
 
 .about-hero{
 
-    position:relative;
+    position: relative;
 
-    height:75vh;
+    min-height: 75vh;      /* au lieu de 55vh */
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
 
-    overflow:hidden;
+    overflow: hidden;
 
 }
 
@@ -24,17 +23,17 @@
 
 .about-hero img{
 
-    position:absolute;
+    position: absolute;
 
-    inset:0;
+    inset: 0;
 
-    width:100%;
+    width: 100%;
 
-    height:100%;
+    height: 100%;
 
-    object-fit:contain;
+    object-fit: cover;      /* IMPORTANT : remplace contain */
 
-    object-position:center;
+    object-position: center;
 
 }
 
@@ -43,11 +42,11 @@
 
 .about-overlay{
 
-    position:absolute;
+    position: absolute;
 
-    inset:0;
+    inset: 0;
 
-    background:rgba(0,0,0,.45);
+    background: rgba(0,0,0,.40);
 
 }
 
@@ -56,17 +55,17 @@
 
 .about-hero-content{
 
-    position:relative;
+    position: relative;
 
-    z-index:2;
+    z-index: 2;
 
-    text-align:center;
+    max-width: 900px;
 
-    color:#ffffff;
+    padding: 0 30px;
 
-    max-width:850px;
+    text-align: center;
 
-    padding:0 20px;
+    color: #fff;
 
 }
 
