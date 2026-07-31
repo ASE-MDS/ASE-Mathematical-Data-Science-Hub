@@ -1846,24 +1846,32 @@
 
     margin:0 auto 45px;
 
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:18px;
-
-}
-
-
-.partner-btn{
-
     display:flex;
 
     justify-content:center;
 
     align-items:center;
 
+    gap:18px;
+
+    flex-wrap:nowrap;
+
+}
+
+
+.partner-btn{
+
+    flex:1;
+
+    max-width:260px;
+
     min-height:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     padding:12px 16px;
 
