@@ -75,7 +75,7 @@
 
     height: 3px;
 
-    background-color: #0F766E;
+    background-color: #C62828;
 
     border-radius: 10px;
 }
@@ -87,7 +87,7 @@
 ====================================================== */
 
 .navbar .logo:not(.active):hover {
-    color: #0F766E;
+    color: #C62828;
 }
 
 
@@ -128,7 +128,7 @@
 ====================================================== */
 
 .navbar .nav-links a:hover {
-    color: #0F766E;
+    color: #C62828;
 }
 
 
@@ -160,7 +160,7 @@
 
     height: 3px;
 
-    background-color: #0F766E;
+    background-color: #C62828;
 
     border-radius: 10px;
 }
@@ -226,7 +226,7 @@
     width: 40px;
     height: 3px;
 
-    background-color: #0F766E;
+    background-color: #C62828;
 
     border-radius: 10px;
 }
@@ -313,7 +313,7 @@
     ----------------------------- */
 
     .navbar .nav-links a:hover {
-        color: #0F766E;
+        color: #C62828;
     }
 
 
