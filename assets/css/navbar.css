@@ -18,19 +18,31 @@
 }
 
 
+
 /* ======================================================
    LOGO
 ====================================================== */
 
 .navbar .logo {
+
     color: #ffffff;
+
     font-family: "Poppins", sans-serif;
+
     font-size: 1.8rem;
+
     font-weight: 700;
+
     text-decoration: none;
+
     position: relative;
+
     padding: 26px 0;
-    transition: color 0.3s ease;
+
+    display: inline-block;
+
+    transition: transform .25s ease;
+
 }
 
 
@@ -56,43 +68,59 @@
 
 
 /* ======================================================
-   HOVER LOGO
+   HOVER DU LOGO
 ====================================================== */
 
-.navbar .logo:not(.active):hover {
-    color: #C62828;
-}
+.navbar .logo:not(.active):hover{
 
+    transform: scale(1.05);
+
+}
 
 /* ======================================================
    NAVIGATION LINKS
 ====================================================== */
 
 .navbar .nav-links {
+
     display: flex;
+
     align-items: center;
+
     gap: 55px;
+
 }
 
 .navbar .nav-links a {
+
     position: relative;
+
     color: #ffffff;
+
     font-family: "Poppins", sans-serif;
+
     font-size: 1rem;
+
     font-weight: 600;
+
     text-decoration: none;
+
     padding: 27px 0;
 
-    transition: transform 0.25s ease;
-}
+    display: inline-block;
 
+    transition: transform .25s ease;
+
+}
 
 /* ======================================================
    HOVER
 ====================================================== */
 
-.navbar .nav-links a:hover {
-    transform: scale(1.06);
+.navbar .nav-links a:not(.active):hover{
+
+    transform: scale(1.05);
+
 }
 
 
@@ -229,12 +257,14 @@
     }
 
     /* -----------------------------
-       HOVER MOBILE
-    ----------------------------- */
+   HOVER MOBILE
+----------------------------- */
 
-    .navbar .nav-links a:hover {
-        transform: scale(1.06);
-    }
+.navbar .nav-links a:not(.active):hover{
+
+    transform: scale(1.05);
+
+}
 
     /* -----------------------------
        ACTIVE MOBILE
