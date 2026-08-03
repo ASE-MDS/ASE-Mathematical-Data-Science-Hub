@@ -5,21 +5,15 @@
 .navbar {
     width: 100%;
     height: 75px;
-
     background-color: #003B7A;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 8%;
-
     box-sizing: border-box;
-
     position: sticky;
     top: 0;
     z-index: 1000;
-
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
 }
 
@@ -30,60 +24,39 @@
 
 .navbar .logo {
     color: #ffffff;
-
     font-family: "Poppins", sans-serif;
-
     font-size: 1.8rem;
-
     font-weight: 700;
-
     text-decoration: none;
-
     position: relative;
-
     padding: 26px 0;
-
     transition: color 0.3s ease;
 }
 
 
 /* ======================================================
    LOGO ACTIF
-   Rouge + souligné
-   Fonctionne sur PC et mobile
 ====================================================== */
 
 .navbar .logo.active {
     color: #ffffff;
 }
 
-
-/* Soulignement du logo actif */
-
 .navbar .logo.active::after {
     content: "";
-
     position: absolute;
-
     bottom: 0;
-
     left: 50%;
-
     transform: translateX(-50%);
-
     width: 45px;
-
     height: 3px;
-
     background-color: #C62828;
-
     border-radius: 10px;
 }
 
 
 /* ======================================================
-   HOVER DU LOGO
-   Uniquement lorsqu'il n'est pas actif
+   HOVER LOGO
 ====================================================== */
 
 .navbar .logo:not(.active):hover {
@@ -97,29 +70,20 @@
 
 .navbar .nav-links {
     display: flex;
-
     align-items: center;
-
     gap: 55px;
 }
 
-
 .navbar .nav-links a {
     position: relative;
-
     color: #ffffff;
-
     font-family: "Poppins", sans-serif;
-
     font-size: 1rem;
-
     font-weight: 600;
-
     text-decoration: none;
-
     padding: 27px 0;
 
-    transition: color 0.3s ease;
+    transition: transform 0.25s ease;
 }
 
 
@@ -128,7 +92,7 @@
 ====================================================== */
 
 .navbar .nav-links a:hover {
-    color: #C62828;
+    transform: scale(1.06);
 }
 
 
@@ -147,21 +111,13 @@
 
 .navbar .nav-links a.active::after {
     content: "";
-
     position: absolute;
-
     bottom: 0;
-
     left: 50%;
-
     transform: translateX(-50%);
-
     width: 46px;
-
     height: 3px;
-
     background-color: #C62828;
-
     border-radius: 10px;
 }
 
@@ -169,8 +125,6 @@
 /* ======================================================
    MOBILE MENU CHECKBOX
 ====================================================== */
-
-/* Cache le carré blanc du checkbox */
 
 .navbar .menu-checkbox {
     display: none;
@@ -181,15 +135,10 @@
    MENU HAMBURGER
 ====================================================== */
 
-/* Caché sur ordinateur */
-
 .navbar .menu-toggle {
     display: none;
-
     color: #ffffff;
-
     font-size: 1.5rem;
-
     cursor: pointer;
 }
 
@@ -206,31 +155,26 @@
 
     .navbar {
         height: 65px;
-
         padding: 0 20px;
     }
-   /* Logo MDS actif sur mobile */
-.navbar .logo.active {
-    color: #ffffff;
-}
 
-.navbar .logo.active::after {
-    content: "";
+    /* Logo actif */
 
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+    .navbar .logo.active {
+        color: #ffffff;
+    }
 
-    transform: translateX(-50%);
-
-    width: 40px;
-    height: 3px;
-
-    background-color: #C62828;
-
-    border-radius: 10px;
-}
-
+    .navbar .logo.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 3px;
+        background-color: #C62828;
+        border-radius: 10px;
+    }
 
     /* -----------------------------
        LOGO MOBILE
@@ -238,10 +182,8 @@
 
     .navbar .logo {
         font-size: 1.5rem;
-
         padding: 21px 0;
     }
-
 
     /* -----------------------------
        HAMBURGER
@@ -249,73 +191,50 @@
 
     .navbar .menu-toggle {
         display: block;
-
         color: #ffffff;
-
         font-size: 1.5rem;
-
         cursor: pointer;
-
         z-index: 1001;
     }
-
 
     /* -----------------------------
        NAVIGATION MOBILE
     ----------------------------- */
 
     .navbar .nav-links {
-
         position: absolute;
-
         top: 65px;
-
         left: 0;
-
         width: 100%;
-
         background-color: #003B7A;
-
         display: none;
-
         flex-direction: column;
-
         align-items: center;
-
         gap: 0;
-
         padding: 10px 0 20px;
-
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     }
-
 
     /* -----------------------------
        LIENS MOBILE
     ----------------------------- */
 
     .navbar .nav-links a {
-
         width: 100%;
-
         text-align: center;
-
         padding: 15px 0;
-
         color: #ffffff;
-
         font-size: 1rem;
+        transition: transform 0.25s ease;
     }
-
 
     /* -----------------------------
        HOVER MOBILE
     ----------------------------- */
 
     .navbar .nav-links a:hover {
-        color: #C62828;
+        transform: scale(1.06);
     }
-
 
     /* -----------------------------
        ACTIVE MOBILE
@@ -325,20 +244,15 @@
         color: #ffffff;
     }
 
-
     /* -----------------------------
        ACTIVE UNDERLINE MOBILE
     ----------------------------- */
 
     .navbar .nav-links a.active::after {
-
         bottom: 5px;
-
         width: 40px;
-
         height: 3px;
     }
-
 
     /* -----------------------------
        OUVERTURE DU MENU
